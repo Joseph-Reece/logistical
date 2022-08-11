@@ -37,6 +37,9 @@
 	    <link rel="stylesheet" href="{{ asset('assets/css/default.css') }}">
 	    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 	    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+
+        <!-- cookie consent-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.4/dist/cookieconsent.css" />
     </head>
     <body>
 
@@ -491,6 +494,10 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo_pcAdFNbTDCAvMwAD19oRTuEmb9M50c"></script>
         <script src="{{ asset('assets/js/plugins.js') }}"></script>
         <script src="{{ asset('assets/js/main.js') }}"></script>
+
+
+  <script defer src="{{asset("assets/js/cookieconsent-init.js")}}"></script>
+  <script src=" https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.4/dist/cookieconsent.js"></script>
 
 
     </body>
