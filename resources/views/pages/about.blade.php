@@ -30,18 +30,17 @@
                     <div class="row justify-content-center">
                         <div class="col-xl-7 col-lg-10">
                             <div class="s-section-title text-center mb-60">
-                                <h2>Cargo Delivery</h2>
-                                <p>Express delivery is an innovative service is effective logistics solution for the delivery of
-                                    small cargo. This service is useful for companies various.</p>
+                                <h2>Company Profile</h2>
+                                <p>Jambo Logistics is the leading innovative Logistics solutions provider. We Have a proven track record of performance driven by our solid knowledge and experience in the Logistic industry.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="services-wrapper">
+                    {{--  <div class="services-wrapper">
                         <div class="row">
                             <div class="col-lg-4 col-md-6">
                                 <div class="single-services mb-30">
                                     <div class="services-thumb">
-                                        <a href="#"><img src="{{asset("assets/images/services_img01.jpg")}}" alt="img"></a>
+                                        <a href="#"><img src="{{asset("assets/img/images/services_img01.jpg")}}" alt="img"></a>
                                     </div>
                                     <div class="services-content">
                                         <div class="services-icon">
@@ -87,7 +86,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>  --}}
                 </div>
             </section>
             <section class="international-services position-relative pb-120 fix">
@@ -96,19 +95,17 @@
                         <div class="row align-items-center">
                             <div class="col-lg-6 order-0 order-lg-2">
                                 <div class="int-services-img text-center text-lg-right">
-                                    <img src="{{asset("assets/img/images/int_cargo_img.png")}}" alt="img">
+                                    <img src="{{asset('assets/img/images/transports.png')}}" alt="img">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="s-section-title mb-30">
-                                    <h2>International Cargo</h2>
-                                    <h6>Express delivery is an innovative service</h6>
+                                    <h2>Our History</h2>
+                                    <h6>Brief history of our company</h6>
                                 </div>
                                 <div class="int-services-content">
-                                    <p>Express delivery is an innovative service is effective logistics solution for the delivery of
-                                        small cargo. This service
-                                        is useful for companies of various effective logistics scale.</p>
-                                    <a href="#" class="btn red-btn">comparison</a>
+                                    <p>Jambo Logistics was established in the year 2005 and have experienced tremendous growth over the last 17years. The company has made great in-roads and established a reputable foot print in the European Market. We now have three fully functional business lines</p>
+                                    {{--  <a href="#" class="btn red-btn">comparison</a>  --}}
                                 </div>
                             </div>
                         </div>
@@ -119,7 +116,7 @@
             <!-- services-area-end -->
 
             <!-- video-area -->
-            <section class="video-area video-bg">
+            {{--  <section class="video-area video-bg">
                 <div class="container">
                     <div class="video-overlay s-video-overlay">
                         <div class="row align-items-center">
@@ -138,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>  --}}
             <!-- video-area-end -->
 
             <!-- faq-area -->
@@ -162,8 +159,8 @@
                                             <i class="far fa-bell"></i>
                                         </div>
                                         <div class="faq-tab-content d-none d-lg-block">
-                                            <h5>Anywhere Shipping</h5>
-                                            <p>Express delivery is an innovative service effective logistics.</p>
+                                            <h5>Intenational Shipping</h5>
+                                            <p>Shipping accross countries</p>
                                         </div>
                                     </a>
                                     <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
@@ -171,8 +168,8 @@
                                             <i class="fas fa-award"></i>
                                         </div>
                                         <div class="faq-tab-content d-none d-lg-block">
-                                            <h5>Cargo Logistics Provides</h5>
-                                            <p>Express delivery is an innovative service effective logistics.</p>
+                                            <h5>Cargo Logistics Provider</h5>
+                                            <p>Types of cargo and packaging</p>
                                         </div>
                                     </a>
                                     <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
@@ -181,7 +178,7 @@
                                         </div>
                                         <div class="faq-tab-content d-none d-lg-block">
                                             <h5>Words Cargo Freight</h5>
-                                            <p>Express delivery is an innovative service effective logistics.</p>
+                                            <p>Cargo transportation services</p>
                                         </div>
                                     </a>
                                     <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
@@ -205,7 +202,7 @@
                                             <div class="faq-accordion-content fix">
                                                 <div class="faq-tab-content mb-30">
                                                     <h5>Anywhere Shipping</h5>
-                                                    <p>Express delivery is an innovative service effective logistics.</p>
+                                                    <p>Shipping internationally</p>
                                                 </div>
                                                 <div class="accordion" id="accordionExample">
                                                     <div class="card">
@@ -213,7 +210,7 @@
                                                             <h5 class="mb-0">
                                                                 <a href="#" class="btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
                                                                     aria-expanded="true" aria-controls="collapseOne">
-                                                                    What is Startesk?
+                                                                    Where do we ship
                                                                 </a>
                                                             </h5>
                                                         </div>
@@ -711,7 +708,7 @@
             <!-- brand-area-end -->
 
             <!-- newsletter -->
-            <section class="newsletter-area">
+            {{--  <section class="newsletter-area">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -736,5 +733,5 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>  --}}
 @endsection

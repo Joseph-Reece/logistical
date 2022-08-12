@@ -132,12 +132,12 @@
                                 <div class="main-menu">
                                     <nav id="mobile-menu">
                                         <ul>
-                                            <li class="active"><a href="{{ route('home')}}">Home</a></li>
-                                            <li class=""><a href="#">About</a>
-                                                <ul class="submenu">
+                                            <li class="{{request()->is('/') ? 'active' : ""}}"><a href="{{ route('home')}}">Home</a></li>
+                                            <li class="{{request()->is('about') ? 'active' : ""}}"><a href="{{ route('about')}}">About</a>
+                                                {{--  <ul class="submenu">
                                                     <li class=""><a href="#">Our History</a></li>
                                                     <li><a href="#">Our Milestones</a></li>
-                                                </ul>
+                                                </ul>  --}}
                                             </li>
                                             <li class=""><a href="#"> Why we Exist</a>
                                                 <ul class="submenu">
@@ -154,7 +154,8 @@
                                             </li>
                                             <li><a href="#">Who we serve</a></li>
                                             <li><a href="#">Our Products</a></li>
-                                            <li><a href="#">Contact Us</a></li>
+                                            <li><a href="#"></a></li>
+                                            <li class="{{request()->is('contact') ? 'active' : ""}}"><a href="{{ route('contact')}}">Contact Us</a></li>
                                         </ul>
                                     </nav>
                                 </div>

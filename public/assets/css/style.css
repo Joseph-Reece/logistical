@@ -393,7 +393,7 @@ label {
 	margin-left: 0;
 }
 .main-menu ul li a {
-	font-size: 15px;
+	font-size: 13px;
 	font-weight: 600;
 	color: #52465e;
 	display: block;
@@ -1120,7 +1120,7 @@ label {
 
 /* 5. Breadcrumb  */
 .breadcrumb-bg {
-	background-image: url(../img/bg/breadcrumb_bg.jpg);
+	background-image: url(../img/images/boxes.jpg);
 	min-height: 726px;
 	background-position: center;
 	background-size: cover;
@@ -1242,7 +1242,7 @@ label {
 	bottom: 15px;
 }
 .breadcrumb-content {
-	padding-top: 220px;
+	padding-top: 50px;
 }
 
 
@@ -3676,7 +3676,7 @@ label {
 
 /* 20. Support */
 .s-breadcrumb-bg {
-	background-image: url(../img/bg/breadcrumb_bg02.jpg);
+	background-image: url(../img/bg/contactbreadcrumb.jpg);
 }
 .t-breadcrumb-bg {
 	background-image: url(../img/bg/breadcrumb_bg03.jpg);

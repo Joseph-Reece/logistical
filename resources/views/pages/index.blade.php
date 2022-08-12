@@ -147,7 +147,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 order-0 order-lg-2">
                         <div class="int-services-img text-center text-lg-right">
-                            <img src="{{asset('assets/img/images/transport.jpg')}}" alt="img">
+                            <img src="{{asset('assets/img/images/transports.png')}}" alt="img">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -445,7 +445,7 @@
                 <div class="col-xl-4">
                     <div class="single-control-wrap fix">
                         <div class="control-thumb">
-                            <img src="{{asset('assets/img/images/control_img01.jpg')}}" alt="img">
+                            <img src="{{asset('assets/img/images/tallbox.jpg')}}" alt="img">
                         </div>
                         <div class="control-overlay-content">
                             <h4><a href="#">Cargo Truck</a></h4>
@@ -456,7 +456,7 @@
                 <div class="col-xl-4">
                     <div class="single-control-wrap fix">
                         <div class="control-thumb">
-                            <img src="{{asset('assets/img/images/control_img02.jpg')}}" alt="img">
+                            <img src="{{asset('assets/img/images/tallbox.jpg')}}" alt="img">
                         </div>
                         <div class="control-overlay-content">
                             <h4><a href="#">Cargo shipping</a></h4>
@@ -467,7 +467,7 @@
                 <div class="col-xl-4">
                     <div class="single-control-wrap fix">
                         <div class="control-thumb">
-                            <img src="{{asset('assets/img/images/control_img03.jpg')}}" alt="img">
+                            <img src="{{asset('assets/img/images/tallbox.jpg')}}" alt="img">
                         </div>
                         <div class="control-overlay-content">
                             <h4><a href="#">Cargo Truck</a></h4>
@@ -478,7 +478,7 @@
                 <div class="col-xl-4">
                     <div class="single-control-wrap fix">
                         <div class="control-thumb">
-                            <img src="{{asset('assets/img/images/control_img02.jpg')}}" alt="img">
+                            <img src="{{asset('assets/img/images/tallbox.jpg')}}" alt="img">
                         </div>
                         <div class="control-overlay-content">
                             <h4><a href="#">Cargo shipping</a></h4>
@@ -489,7 +489,7 @@
                 <div class="col-xl-4">
                     <div class="single-control-wrap fix">
                         <div class="control-thumb">
-                            <img src="{{asset('assets/img/images/control_img03.jpg')}}" alt="img">
+                            <img src="{{asset('assets/img/images/tallbox.jpg')}}" alt="img">
                         </div>
                         <div class="control-overlay-content">
                             <h4><a href="#">Cargo Truck</a></h4>
