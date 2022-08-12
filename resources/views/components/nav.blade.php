@@ -25,7 +25,7 @@
                                                     <li><a href="#">Our Milestones</a></li>
                                                 </ul> --}}
                                     </li>
-                                    <li class="{{ request()->is('why-we-exist') ? 'active' : '' }}"><a href="{{route('why-we-exist')}}"> Why we Exist</a>
+                                    <li class="{{ request()->is('why-we-exist') ? 'active' : '' }}"><a href="{{route('why_we_exist')}}"> Why we Exist</a>
                                         {{--  <ul class="submenu">
                                             <li class=""><a href="#">Our Mission</a></li>
                                             <li><a href="#">Our Vision</a></li>
