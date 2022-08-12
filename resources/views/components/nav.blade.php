@@ -32,7 +32,7 @@
                                             <li><a href="#">Our Core Values</a></li>
                                         </ul>  --}}
                                     </li>
-                                    <li class="{{ request()->is('our-business') ? 'active' : '' }}"><a href="{{route('our-business')}}}"> Our Businesses</a>
+                                    <li class="{{ request()->is('our-business') ? 'active' : '' }}"><a href="{{route('our-business')}}"> Our Businesses</a>
                                         {{--  <ul class="submenu">
                                             <li class=""><a href="#">Key Competencies</a></li>
                                             <li><a href="#">Our Speciality</a></li>
