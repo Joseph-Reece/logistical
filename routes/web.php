@@ -24,6 +24,14 @@ Route::get('/about', function () {
      return view('pages.about');
 })->name('about');
 
+Route::get('/why-we-exist', function () {
+     return view('pages.why-we-exist');
+})->name('why-we-exist');
+
+Route::get('/why-we-exist', function () {
+     return view('pages.our-business');
+})->name('our-business');
+
 Route::get('/contact-us', function () {
      return view('pages.contact');
 })->name('contact');
