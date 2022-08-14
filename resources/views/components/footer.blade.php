@@ -21,30 +21,22 @@
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="footer-widget mb-50">
                         <div class="fw-title mb-30">
-                            <h5>Address 1 Germany</h5>
+                            <h5>Germany office</h5>
                         </div>
-                        <div class="f-rc-post">
+                        <div class="fw-link">
                             <ul>
-                                <li>
-                                    <div class="f-rc-content">
-                                        <address>
-                                            <p>Jambo Logistics</p>
-                                            <p>Ripshorster str 366 A, </p>
-                                            <p>45357 Essen </p>
-                                        </address>
-                                        <p>
-                                            <span class="fa fa-phone" aria-hidden="true"></span>
-                                            <a href="tel:+491 5224 127 081">+491 5224 127 081</a>
-                                        </p>
-                                        <p>
-                                        <a href="mailto:info@jambologistics.co.ke">
-                                            <span class="fa fa-envelope" aria-hidden="true"></span>
-                                                info@jambologistics.co.ke
-                                            </a>
-
-                                        </p>
-                                    </div>
-                                </li>
+                                <li>Ripshorster str 366 A, </li>
+                                <li>45357 Essen</li>
+                                <li><a href="tel:+491 5224 127 081">+491 5224 127 081</a></li>
+                            </ul>
+                        </div>
+                        <div class="fw-title mb-30">
+                            <h5>Kenya office</h5>
+                        </div>
+                        <div class="fw-link">
+                            <ul>
+                                <li>Githurai, Mwihoko </li>
+                                <li><a href="tel:+254 799 984 971">+254 799 984 971</a></li>
                             </ul>
                         </div>
                     </div>
@@ -52,30 +44,14 @@
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="footer-widget mb-50">
                         <div class="fw-title mb-30">
-                            <h5>Address 1 Germany</h5>
+                            <h5>Company</h5>
                         </div>
-                        <div class="f-rc-post">
+                        <div class="fw-link">
                             <ul>
-                                <li>
-                                    <div class="f-rc-content">
-                                        <address>
-                                            <p>Jambo Logistics</p>
-                                            <p>Ripshorster str 366 A, </p>
-                                            <p>45357 Essen </p>
-                                        </address>
-                                        <p>
-                                            <span class="fa fa-phone" aria-hidden="true"></span>
-                                            <a href="tel:+491 5224 127 081">+491 5224 127 081</a>
-                                        </p>
-                                        <p>
-                                        <a href="mailto:info@jambologistics.co.ke">
-                                            <span class="fa fa-envelope" aria-hidden="true"></span>
-                                                info@jambologistics.co.ke
-                                            </a>
-
-                                        </p>
-                                    </div>
-                                </li>
+                                <li><a href="{{ route('home')}}">Home</a></li>
+                                <li><a href="{{ route('about')}}">About</a></li>
+                                <li><a href="">Services</a></li>
+                                <li><a href="{{ route('contact')}}">Contact</a></li>
                             </ul>
                         </div>
                     </div>

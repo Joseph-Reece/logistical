@@ -80,7 +80,7 @@
     <!-- category-area-end -->
 
     <!-- services-area -->
-    <section class="services-area delivery-bg pt-110 pb-90">
+    {{-- <section class="services-area delivery-bg pt-110 pb-90">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-10">
@@ -141,8 +141,10 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="international-services position-relative pb-120 fix">
+    </section> --}}
+    {{-- services section end --}}
+
+    <section class="international-services position-relative pt-120 pb-100 fix">
         <div class="container">
             <div class="services-wrapper">
                 <div class="row align-items-center">
@@ -154,11 +156,23 @@
                     <div class="col-lg-6">
                         <div class="s-section-title mb-30">
                             <h2>International Cargo</h2>
-                            <h6>Jambo Logistics facilitates transport of small cargo abroad</h6>
+                            <h6>Ship, Deliver, easy for you</h6>
                         </div>
                         <div class="int-services-content">
-                            <p>Jambo Logistics facilitates transport abroad to and fro. This effective logistics solution
-                                for the delivery of small cargo.</p>
+                            <p>Jambo logistics pick-up service is effective logistics solution for delivery of small
+                                cargo.</p>
+                            <ul>
+                                <li>
+                                    <i class="flaticon-shipping"></i>
+                                    <h5>60+ Countries</h5>
+                                    <p>With users who trust us</p>
+                                </li>
+                                <li>
+                                    <i class="flaticon-warehouse"></i>
+                                    <h5>Warehousing</h5>
+                                    <p>Cargo in-transit between our warehouses. Less cost for you</p>
+                                </li>
+                            </ul>
                             <a href="#" class="btn">Get Quote</a>
                         </div>
                     </div>
@@ -173,29 +187,29 @@
 
     <!-- video-area -->
     <!-- <section class="video-area video-bg">
-            <div class="container">
-                <div class="video-overlay">
-                    <div class="row align-items-center">
-                        <div class="col-xl-5 col-lg-8 order-lg-0 order-2">
-                            <div class="video-title">
-                                <span>Our Chalanges</span>
-                                <h2><span>never</span> break our promise</h2>
-                                <a href="#">more services<span></span></a>
+                <div class="container">
+                    <div class="video-overlay">
+                        <div class="row align-items-center">
+                            <div class="col-xl-5 col-lg-8 order-lg-0 order-2">
+                                <div class="video-title">
+                                    <span>Our Chalanges</span>
+                                    <h2><span>never</span> break our promise</h2>
+                                    <a href="#">more services<span></span></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="video-play">
-                                <a href="https://www.youtube.com/watch?v=iWKu6WNFf9M" class="popup-video"><img src="{{ asset('assets/img/icon/play_btn.png') }}" alt="img"></a>
+                            <div class="col-lg-3">
+                                <div class="video-play">
+                                    <a href="https://www.youtube.com/watch?v=iWKu6WNFf9M" class="popup-video"><img src="{{ asset('assets/img/icon/play_btn.png') }}" alt="img"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section> -->
+            </section> -->
     <!-- video-area-end -->
 
     <!-- delivery-services -->
-    <section class="delivery-services position-relative fix pt-110">
+    <section class="delivery-services position-relative fix pt-90">
         <div class="overlay-title paroller" data-paroller-factor="0.15" data-paroller-factor-lg="0.15"
             data-paroller-factor-md="0.15" data-paroller-factor-sm="0.15" data-paroller-type="foreground"
             data-paroller-direction="horizontal">Delivery</div>
@@ -205,8 +219,8 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-10">
                         <div class="s-section-title mb-60 text-center">
-                            <h2>Cargo Delivery service</h2>
-                            <p>Text about Cargo delivery</p>
+                            <h2>Why Us</h2>
+                            <p>See why Our Clients Choose us</p>
                         </div>
                     </div>
                 </div>
@@ -233,7 +247,9 @@
                     </div>
                     <div class="col-xl-4 d-none d-xl-block">
                         <div class="d-services-img">
-                            <img src="{{ asset('assets/img/images/cargo-delivery.jpg') }}" alt="img">
+                            <img src="{{ asset('assets/img/images/why-us.png') }}" alt="img">
+
+
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-6">
@@ -320,7 +336,7 @@
     <!-- fact-area-end -->
 
     <!-- section-area -->
-    <section class="area-wrapper black-bg position-relative pt-115 pb-120">
+    <section class="area-wrapper black-bg position-relative pt-115 pb-120 mb-120">
         <div class="area-wrap-bg"></div>
         <div class="testimonial-map-bg"></div>
         <div class="container">
@@ -335,7 +351,7 @@
                             @foreach ($testimonials as $testimonial)
                                 <div class="single-testimonial">
                                     <div class="testimonial-cat mb-30">
-                                        <h5>{{$testimonial['type']}}</h5>
+                                        <h5>{{ $testimonial['type'] }}</h5>
                                         <div class="testimonial-rating">
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
@@ -345,14 +361,11 @@
                                         </div>
                                     </div>
                                     <div class="testimonial-content mb-45">
-                                        <p>“ {{$testimonial['message']}} ”</p>
+                                        <p>“ {{ $testimonial['message'] }} ”</p>
                                     </div>
                                     <div class="testimonial-avatar">
-                                        <div class="testi-avatar-img">
-                                            <img src="{{ asset('assets/img/images/client.png') }}" alt="img">
-                                        </div>
                                         <div class="testi-avatar-info">
-                                            <h6>Eric Chege</h6>
+                                            <h6>{{$testimonial['client']}}</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -411,7 +424,7 @@
     <!-- section-area-end -->
 
     <!-- control-area -->
-    <section class="control-area pt-110 pb-120">
+    {{--  <section class="control-area pt-110 pb-120">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-10">
@@ -481,74 +494,92 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>  --}}
     <!-- control-area-end -->
 
     <!-- brand-area -->
     <!-- <div class="brand-area gray-bg pt-85 pb-85">
-            <div class="container">
-                <div class="row brand-active">
-                    <div class="col-12">
-                        <div class="signle-brand">
-                            <img src="{{ asset('assets/img/brand/brnad_logo01.png') }}" alt="img">
+                <div class="container">
+                    <div class="row brand-active">
+                        <div class="col-12">
+                            <div class="signle-brand">
+                                <img src="{{ asset('assets/img/brand/brnad_logo01.png') }}" alt="img">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="signle-brand">
-                            <img src="{{ asset('assets/img/brand/brnad_logo02.png') }}" alt="img">
+                        <div class="col-12">
+                            <div class="signle-brand">
+                                <img src="{{ asset('assets/img/brand/brnad_logo02.png') }}" alt="img">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="signle-brand">
-                            <img src="{{ asset('assets/img/brand/brnad_logo03.png') }}" alt="img">
+                        <div class="col-12">
+                            <div class="signle-brand">
+                                <img src="{{ asset('assets/img/brand/brnad_logo03.png') }}" alt="img">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="signle-brand">
-                            <img src="{{ asset('assets/img/brand/brnad_logo04.png') }}" alt="img">
+                        <div class="col-12">
+                            <div class="signle-brand">
+                                <img src="{{ asset('assets/img/brand/brnad_logo04.png') }}" alt="img">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="signle-brand">
-                            <img src="{{ asset('assets/img/brand/brnad_logo05.png') }}" alt="img">
+                        <div class="col-12">
+                            <div class="signle-brand">
+                                <img src="{{ asset('assets/img/brand/brnad_logo05.png') }}" alt="img">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="signle-brand">
-                            <img src="{{ asset('assets/img/brand/brnad_logo03.png') }}" alt="img">
+                        <div class="col-12">
+                            <div class="signle-brand">
+                                <img src="{{ asset('assets/img/brand/brnad_logo03.png') }}" alt="img">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div> -->
+            </div> -->
     <!-- brand-area-end -->
 
     <!-- newsletter -->
     <!-- <section class="newsletter-area gray-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="newsletter-wrap">
-                            <div class="row">
-                                <div class="col-lg-5">
-                                    <div class="newsletter-content">
-                                        <h4>Newsletter Sign Up</h4>
-                                        <span>Notifications our best deals...</span>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="newsletter-wrap">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="newsletter-content">
+                                            <h4>Newsletter Sign Up</h4>
+                                            <span>Notifications our best deals...</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="newsletter-form">
-                                        <form action="#">
-                                            <input type="email" placeholder="Enter your email...">
-                                            <button class="btn">subscribe</button>
-                                        </form>
+                                    <div class="col-lg-7">
+                                        <div class="newsletter-form">
+                                            <form action="#">
+                                                <input type="email" placeholder="Enter your email...">
+                                                <button class="btn">subscribe</button>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section> -->
+            </section> -->
     <!-- newsletter-end -->
+@endsection
+@section('script')
+
+
+<script>
+LottieInteractivity.create({
+    mode:"scroll",
+    player:'#firstLottie',
+    actions: [
+        {
+            visibility:[0,1],
+            type: "seek",
+            frames: [0, 125],
+        },
+    ]
+});
+</script>
+
 @endsection
