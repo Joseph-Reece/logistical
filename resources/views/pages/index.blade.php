@@ -187,25 +187,25 @@
 
     <!-- video-area -->
     <!-- <section class="video-area video-bg">
-                <div class="container">
-                    <div class="video-overlay">
-                        <div class="row align-items-center">
-                            <div class="col-xl-5 col-lg-8 order-lg-0 order-2">
-                                <div class="video-title">
-                                    <span>Our Chalanges</span>
-                                    <h2><span>never</span> break our promise</h2>
-                                    <a href="#">more services<span></span></a>
+                    <div class="container">
+                        <div class="video-overlay">
+                            <div class="row align-items-center">
+                                <div class="col-xl-5 col-lg-8 order-lg-0 order-2">
+                                    <div class="video-title">
+                                        <span>Our Chalanges</span>
+                                        <h2><span>never</span> break our promise</h2>
+                                        <a href="#">more services<span></span></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="video-play">
-                                    <a href="https://www.youtube.com/watch?v=iWKu6WNFf9M" class="popup-video"><img src="{{ asset('assets/img/icon/play_btn.png') }}" alt="img"></a>
+                                <div class="col-lg-3">
+                                    <div class="video-play">
+                                        <a href="https://www.youtube.com/watch?v=iWKu6WNFf9M" class="popup-video"><img src="{{ asset('assets/img/icon/play_btn.png') }}" alt="img"></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section> -->
+                </section> -->
     <!-- video-area-end -->
 
     <!-- delivery-services -->
@@ -365,7 +365,7 @@
                                     </div>
                                     <div class="testimonial-avatar">
                                         <div class="testi-avatar-info">
-                                            <h6>{{$testimonial['client']}}</h6>
+                                            <h6>{{ $testimonial['client'] }}</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -390,13 +390,16 @@
                                 <div class="cta-form-col d-flex justify-content-between">
                                     <select class="custom-select">
                                         <option selected="">From Country</option>
-                                        <option value="Kenya">Kenya</option>
-                                        <option value="United Kingdom">United Kingdom</option>
+                                        @foreach ($euro_countries as $country)
+                                            <option value="{{ $country['name'] }}">{{ $country['name'] }}</option>
+                                        @endforeach
+
                                     </select>
-                                    <select class="custom-select">
+                                    <select class="custom-select ">
                                         <option selected="">To Country</option>
-                                        <option value="Kenya">Kenya</option>
-                                        <option value="United Kingdom">United Kingdom</option>
+                                        @foreach ($east_africa_countries as $country)
+                                            <option value="{{ $country['name'] }}">{{ $country['name'] }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                                 <div class="cta-form-col d-flex justify-content-between">
@@ -424,7 +427,7 @@
     <!-- section-area-end -->
 
     <!-- control-area -->
-    {{--  <section class="control-area pt-110 pb-120">
+    {{-- <section class="control-area pt-110 pb-120">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-10">
@@ -494,92 +497,81 @@
                 </div>
             </div>
         </div>
-    </section>  --}}
+    </section> --}}
     <!-- control-area-end -->
 
     <!-- brand-area -->
     <!-- <div class="brand-area gray-bg pt-85 pb-85">
-                <div class="container">
-                    <div class="row brand-active">
-                        <div class="col-12">
-                            <div class="signle-brand">
-                                <img src="{{ asset('assets/img/brand/brnad_logo01.png') }}" alt="img">
+                    <div class="container">
+                        <div class="row brand-active">
+                            <div class="col-12">
+                                <div class="signle-brand">
+                                    <img src="{{ asset('assets/img/brand/brnad_logo01.png') }}" alt="img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="signle-brand">
-                                <img src="{{ asset('assets/img/brand/brnad_logo02.png') }}" alt="img">
+                            <div class="col-12">
+                                <div class="signle-brand">
+                                    <img src="{{ asset('assets/img/brand/brnad_logo02.png') }}" alt="img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="signle-brand">
-                                <img src="{{ asset('assets/img/brand/brnad_logo03.png') }}" alt="img">
+                            <div class="col-12">
+                                <div class="signle-brand">
+                                    <img src="{{ asset('assets/img/brand/brnad_logo03.png') }}" alt="img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="signle-brand">
-                                <img src="{{ asset('assets/img/brand/brnad_logo04.png') }}" alt="img">
+                            <div class="col-12">
+                                <div class="signle-brand">
+                                    <img src="{{ asset('assets/img/brand/brnad_logo04.png') }}" alt="img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="signle-brand">
-                                <img src="{{ asset('assets/img/brand/brnad_logo05.png') }}" alt="img">
+                            <div class="col-12">
+                                <div class="signle-brand">
+                                    <img src="{{ asset('assets/img/brand/brnad_logo05.png') }}" alt="img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="signle-brand">
-                                <img src="{{ asset('assets/img/brand/brnad_logo03.png') }}" alt="img">
+                            <div class="col-12">
+                                <div class="signle-brand">
+                                    <img src="{{ asset('assets/img/brand/brnad_logo03.png') }}" alt="img">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div> -->
+                </div> -->
     <!-- brand-area-end -->
 
     <!-- newsletter -->
     <!-- <section class="newsletter-area gray-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="newsletter-wrap">
-                                <div class="row">
-                                    <div class="col-lg-5">
-                                        <div class="newsletter-content">
-                                            <h4>Newsletter Sign Up</h4>
-                                            <span>Notifications our best deals...</span>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="newsletter-wrap">
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <div class="newsletter-content">
+                                                <h4>Newsletter Sign Up</h4>
+                                                <span>Notifications our best deals...</span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <div class="newsletter-form">
-                                            <form action="#">
-                                                <input type="email" placeholder="Enter your email...">
-                                                <button class="btn">subscribe</button>
-                                            </form>
+                                        <div class="col-lg-7">
+                                            <div class="newsletter-form">
+                                                <form action="#">
+                                                    <input type="email" placeholder="Enter your email...">
+                                                    <button class="btn">subscribe</button>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section> -->
+                </section> -->
     <!-- newsletter-end -->
 @endsection
 @section('script')
-
-
-<script>
-LottieInteractivity.create({
-    mode:"scroll",
-    player:'#firstLottie',
-    actions: [
-        {
-            visibility:[0,1],
-            type: "seek",
-            frames: [0, 125],
-        },
-    ]
-});
-</script>
-
+    <script>
+        $(document).ready(function() {
+            $('.country-select').select2();
+        });
+    </script>
 @endsection

@@ -35,7 +35,8 @@
                         </div>
                         <div class="fw-link">
                             <ul>
-                                <li>Githurai, Mwihoko </li>
+                                <li>Jambo logistics Kenya, </li>
+                                <li>Mwihoko Business Complex </li>
                                 <li><a href="tel:+254 799 984 971">+254 799 984 971</a></li>
                             </ul>
                         </div>
