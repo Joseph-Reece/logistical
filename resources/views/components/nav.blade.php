@@ -40,7 +40,6 @@
                                     </li>
                                     <li><a href="#">Who we serve</a></li>
                                     <li><a href="#">Our Products</a></li>
-                                    <li><a href="#"></a></li>
                                     <li class="{{ request()->is('contact-us') ? 'active' : '' }}"><a
                                             href="{{ route('contact') }}">Contact Us</a></li>
                                 </ul>
