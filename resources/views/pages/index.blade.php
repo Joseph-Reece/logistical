@@ -290,7 +290,7 @@
                         <div class="fact-content">
                             <h4><span class="count">3,560</span> km</h4>
                             <h6>Package Delivered</h6>
-                            <p>Fill Text Here</p>
+                            {{--  <p>Fill Text Here</p>  --}}
                         </div>
                     </div>
                 </div>
@@ -300,9 +300,9 @@
                             <i class="flaticon-placeholder"></i>
                         </div>
                         <div class="fact-content">
-                            <h4><span class="count">2</span></h4>
+                            <h4><span class="count">67</span></h4>
                             <h6>Countries Covered</h6>
-                            <p>Fill Text Here</p>
+                            {{--  <p>Fill Text Here</p>  --}}
                         </div>
                     </div>
                 </div>
@@ -313,8 +313,8 @@
                         </div>
                         <div class="fact-content">
                             <h4><span class="count">456</span> k</h4>
-                            <h6>Happy Customer</h6>
-                            <p>Fill Text Here</p>
+                            <h6>Happy Customers</h6>
+                            {{--  <p>Fill Text Here</p>  --}}
                         </div>
                     </div>
                 </div>
