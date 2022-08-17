@@ -2,7 +2,7 @@
 <footer>
     <div class="footer-wrap pt-190 pb-40" data-background="{{asset('assets/img/bg/footer_bg.jpg')}}">
         <div class="container">
-            <div class="row">
+            <div class="row text-center">
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="footer-widget mb-50">
                         <div class="footer-logo mb-35">
