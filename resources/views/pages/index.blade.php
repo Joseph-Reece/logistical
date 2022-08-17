@@ -232,7 +232,7 @@
                             </div>
                             <div class="ds-content text-sm-left text-md-right text-center">
                                 <h5>Cargo Delivery</h5>
-                                <p>Text Here Text Here</p>
+                                {{--  <p>Text Here Text Here</p>  --}}
                             </div>
                         </div>
                         <div class="single-delivery-services mb-70 pr-75">
@@ -241,7 +241,7 @@
                             </div>
                             <div class="ds-content text-sm-left text-md-right text-center">
                                 <h5>Satisfied clients</h5>
-                                <p>Text Here Text Here</p>
+                                {{--  <p>Text Here Text Here</p>  --}}
                             </div>
                         </div>
                     </div>
@@ -259,7 +259,7 @@
                             </div>
                             <div class="ds-content">
                                 <h5>International delivery</h5>
-                                <p>Text Here Text Here</p>
+                                {{--  <p>Text Here Text Here</p>  --}}
                             </div>
                         </div>
                         <div class="single-delivery-services mb-70 pl-75">
@@ -268,7 +268,7 @@
                             </div>
                             <div class="ds-content">
                                 <h5>Heavy Boxes Cargo</h5>
-                                <p>Text Here Text Here</p>
+                                {{--  <p>Text Here Text Here</p>  --}}
                             </div>
                         </div>
                     </div>
@@ -326,7 +326,7 @@
                         <div class="fact-content">
                             <h4><span class="count">5</span> Yrs</h4>
                             <h6>Year Experience</h6>
-                            <p>Fill Text Here</p>
+                            {{--  <p>Fill Text Here</p>  --}}
                         </div>
                     </div>
                 </div>
