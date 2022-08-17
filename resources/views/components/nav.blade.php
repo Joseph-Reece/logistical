@@ -1,14 +1,19 @@
-
 <header>
     <div id="header-sticky" class="main-header">
         <div class="container-fluid header-container-p">
             <div class="row align-items-center">
                 <div class="col-lg-3 col-md-6">
-                    <div class="logo">
+                    <div class="logo d-none d-lg-flex">
                         <a href="{{ route('home') }}"><img src="{{ asset('assets/img/logo/logo2.png') }}"
                                 style="max-height: 100px; max-width: 100px;" class="mobile-logo" alt="Logo"></a>
-                        <!-- <a href="{{ route('home') }}"><img src="img/logo/s_logo.png" class="mobile-logo logo-sticky-none" alt="Logo"></a>
-                                <a href="{{ route('home') }}"><img src="img/logo/logo.png" class="mobile-logo s-logo-none" alt="Logo"></a> -->
+                    </div>
+                    <div class="logo d-flex d-lg-none">
+                        <a href="{{ route('home') }}">
+                            <span>
+                                Jambo
+                            </span>
+                            Logistics
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-6 d-none d-md-block">
@@ -25,18 +30,20 @@
                                                     <li><a href="#">Our Milestones</a></li>
                                                 </ul> --}}
                                     </li>
-                                    <li class="{{ request()->is('why-we-exist') ? 'active' : '' }}"><a href="{{route('why_we_exist')}}"> Why we Exist</a>
-                                        {{--  <ul class="submenu">
+                                    <li class="{{ request()->is('why-we-exist') ? 'active' : '' }}"><a
+                                            href="{{ route('why_we_exist') }}"> Why we Exist</a>
+                                        {{-- <ul class="submenu">
                                             <li class=""><a href="#">Our Mission</a></li>
                                             <li><a href="#">Our Vision</a></li>
                                             <li><a href="#">Our Core Values</a></li>
-                                        </ul>  --}}
+                                        </ul> --}}
                                     </li>
-                                    <li class="{{ request()->is('our-business') ? 'active' : '' }}"><a href="{{route('our-business')}}"> Our Businesses</a>
-                                        {{--  <ul class="submenu">
+                                    <li class="{{ request()->is('our-business') ? 'active' : '' }}"><a
+                                            href="{{ route('our-business') }}"> Our Businesses</a>
+                                        {{-- <ul class="submenu">
                                             <li class=""><a href="#">Key Competencies</a></li>
                                             <li><a href="#">Our Speciality</a></li>
-                                        </ul>  --}}
+                                        </ul> --}}
                                     </li>
                                     <li><a href="#">Who we serve</a></li>
                                     <li><a href="#">Our Products</a></li>
