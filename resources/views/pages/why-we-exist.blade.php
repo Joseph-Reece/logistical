@@ -40,7 +40,7 @@
             </div>
             <div class="col-lg-4 fadeInDown mt-4 delay-1s">
                 <div class="text-center">
-                    <img src="{{ asset('assets/img/images/missionvission.png') }}" alt="img">
+                    <img src="{{ asset('assets/img/images/missionVission.png') }}" alt="img">
                 </div>
             </div>
             <div class="col-lg-4 animated slideInLeft delay-1s">
