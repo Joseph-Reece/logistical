@@ -1,3 +1,13 @@
 .logo >a >span{
     color:orange;
 }
+.value-card {
+    border: 0;
+}
+.value-card .card-body >h6 {
+    color: grey;
+}
+.value-image {
+    height: 60px;
+    padding-bottom: 5px;
+}
