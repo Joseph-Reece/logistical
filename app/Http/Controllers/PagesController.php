@@ -267,6 +267,22 @@ class PagesController extends Controller
             ],
         ]);
 
-        return view('pages.why-we-exist', compact('core_values'));
+        $principles = [
+            'Committed and well-motivated management',
+
+            'An entrepreneurial approach and innovation',
+
+            'Good employee benefits and incentives',
+
+            ' A tradition of meeting timelines',
+
+            'Adherence to quality service',
+
+            'Professionalism',
+
+            'Customer service',
+        ];
+
+        return view('pages.why-we-exist', compact('core_values', 'principles'));
     }
 }
