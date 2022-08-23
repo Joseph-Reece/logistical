@@ -1,5 +1,6 @@
 @extends('components.layouts.app')
 
+
 @section('main')
     <!-- breadcrumb-area -->
     <div class="breadcrumb-area breadcrumb-bg">
@@ -44,12 +45,12 @@
                     </li>
                 </ul>
                 <div class="tab-content pt-3" id="myTabContent">
-                {{--  Company profile  --}}
+                    {{-- Company profile --}}
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <div class="services-wrapper">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 order-0 order-lg-2">
-                                    <div class="int-services-img text-center text-lg-right">
+                                    <div class="int-services-img text-lg-right text-center">
                                         <img src="{{ asset('assets/img/images/transports.png') }}" alt="img">
                                     </div>
                                 </div>
@@ -69,12 +70,12 @@
                             </div>
                         </div>
                     </div>
-                    {{--  History  --}}
+                    {{-- History --}}
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                         <div class="services-wrapper">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 order-0 order-lg-2">
-                                    <div class="int-services-img text-center text-lg-right">
+                                    <div class="int-services-img text-lg-right text-center">
                                         <img src="{{ asset('assets/img/images/transports.png') }}" alt="img">
                                     </div>
                                 </div>
@@ -98,29 +99,9 @@
                             data-paroller-factor-md="0.15" data-paroller-factor-sm="0.15" data-paroller-type="foreground"
                             data-paroller-direction="horizontal">Cargo</div>
                     </div>
-                    {{--  Milestones  --}}
+                    {{-- Milestones --}}
                     <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                         <div class="services-wrapper">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6 order-0 order-lg-2">
-                                    <div class="int-services-img text-center text-lg-right">
-                                        <img src="{{ asset('assets/img/images/transports.png') }}" alt="img">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="s-section-title mb-30">
-                                        <h2>Company Profile</h2>
-                                        <h6>About our company</h6>
-                                    </div>
-                                    <div class="int-services-content">
-                                        <p>Jambo Logistics is the leading innovative Logistics solutions provider. We Have a
-                                            proven track
-                                            record of performance driven by our solid knowledge and experience in the
-                                            Logistic industry.</p>
-                                        {{-- <a href="#" class="btn red-btn">comparison</a> --}}
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -135,7 +116,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-10">
-                    <div class="s-section-title text-center mb-60">
+                    <div class="s-section-title mb-60 text-center">
                         <h2>frequently asked questions</h2>
                         <p>Express delivery is an innovative service is effective logistics solution for the delivery of
                             small cargo. This service is useful for companies various.</p>

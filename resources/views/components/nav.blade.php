@@ -25,27 +25,14 @@
                                             href="{{ route('home') }}">Home</a></li>
                                     <li class="{{ request()->is('about') ? 'active' : '' }}"><a
                                             href="{{ route('about') }}">About</a>
-                                        {{-- <ul class="submenu">
-                                                    <li class=""><a href="#">Our History</a></li>
-                                                    <li><a href="#">Our Milestones</a></li>
-                                                </ul> --}}
                                     </li>
                                     <li class="{{ request()->is('why-we-exist') ? 'active' : '' }}"><a
                                             href="{{ route('why_we_exist') }}"> Why we Exist</a>
-                                        {{-- <ul class="submenu">
-                                            <li class=""><a href="#">Our Mission</a></li>
-                                            <li><a href="#">Our Vision</a></li>
-                                            <li><a href="#">Our Core Values</a></li>
-                                        </ul> --}}
-                                    </li>
-                                    <li class="{{ request()->is('our-business') ? 'active' : '' }}"><a
-                                            href="{{ route('our-business') }}"> Our Businesses</a>
-                                        {{-- <ul class="submenu">
-                                            <li class=""><a href="#">Key Competencies</a></li>
-                                            <li><a href="#">Our Speciality</a></li>
-                                        </ul> --}}
                                     </li>
                                     <li><a href="#">Who we serve</a></li>
+                                    <li class="{{ request()->is('the-team') ? 'active' : '' }}"><a
+                                            href="{{ route('the-team') }}"> The Team</a>
+                                    </li>
                                     <li><a href="#">Our Products</a></li>
                                     <li class="{{ request()->is('contact-us') ? 'active' : '' }}"><a
                                             href="{{ route('contact') }}">Contact Us</a></li>

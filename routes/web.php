@@ -26,9 +26,9 @@ Route::get('/about', function () {
 
 Route::get('/why-we-exist', [PagesController::class, 'whyExist'])->name('why_we_exist');
 
-Route::get('/our-business', function () {
-     return view('pages.our-business');
-})->name('our-business');
+Route::get('/the-team', function () {
+     return view('pages.the-team');
+})->name('the-team');
 
 Route::get('/contact-us', function () {
      return view('pages.contact');

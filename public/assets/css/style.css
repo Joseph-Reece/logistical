@@ -41,11 +41,12 @@
 
 /* 1. Theme default css */
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900|Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap');
  body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Raleway', 'sans serif';
 	font-weight: normal;
 	font-style: normal;
-	font-size: 15px;
+	font-size: 18px;
 	color: #545454;
 }
 .img {
@@ -1121,7 +1122,7 @@ label {
 /* 5. Breadcrumb  */
 .breadcrumb-bg {
 	background-image: url(../img/bg/aboutBanner.jpg);
-	min-height: 726px;
+	min-height: 300px;
 	background-position: center;
 	background-size: cover;
 	position: relative;

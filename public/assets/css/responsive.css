@@ -58,7 +58,7 @@
 	padding-top: 370px;
 }
 .breadcrumb-bg {
-	min-height: 640px;
+	min-height: 400px;
 }
 .main-menu ul li .submenu li .submenu {
 	right: 100%;
@@ -541,9 +541,9 @@ blockquote.classic-blockquote-post::after {
 .s-single-testimonial {
 	padding: 55px 70px 40px 80px;
 }
-.breadcrumb-bg {
+/* .breadcrumb-bg {
 	min-height: 560px;
-}
+} */
 .breadcrumb-content {
 	padding-top: 120px;
 }
@@ -973,9 +973,9 @@ blockquote.blockquote-post::before {
 	padding: 55px 15px 40px 15px;
 	text-align: center;
 }
-.breadcrumb-bg {
+/* .breadcrumb-bg {
 	min-height: 560px;
-}
+} */
 .breadcrumb-content {
 	padding-top: 120px;
 }
