@@ -154,12 +154,12 @@
                             <div class="backside">
                                 <div class="card">
                                     <div class="card-body mt-4 text-center">
-                                        <h4 class="card-title">Antony Macharia</h4>
+                                        <h4 class="card-title">Annfrasia Gichuhi</h4>
                                         <p class="card-text">She holds a Bachelor’s degree in Marketing Management and Higher Diploma in Business
                                             Administration from Technical University of Kenya (TUK).
                                             She has a wealth of over 10 years’ experience, having worked in the various companies in
-                                            the managerial positions. She is the Company’s Managing Director and a member of the
-                                            <Board class=""></Board>
+                                            the managerial positions. She is the Company’s Managing Director and board member
+
                                         </p>
                                         <ul class="list-inline">
                                             <li class="list-inline-item">
@@ -213,7 +213,7 @@
                             <div class="backside">
                                 <div class="card">
                                     <div class="card-body mt-4 text-center">
-                                        <h4 class="card-title">Antony Macharia</h4>
+                                        <h4 class="card-title">Catherine Muturi</h4>
                                         <p class="card-text">
                                             She holds a Bachelor's degree in Customer Relationship Management and Higher Diploma in Marketing Management from Chuka University.
                                             She has over 10 years' experience, having worked in the various companies in managerial positions. She is the Company's Warehouse manager.
