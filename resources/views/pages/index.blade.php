@@ -44,32 +44,32 @@
             <div class="s-category-wrap">
                 <div class="row d-flex justify-content-center">
                     <div class="col-lg-3 col-sm-6">
-                        <a href="#" class="s-single-cat mb-30">
+                        <a href="{{route('products')}}" class="s-single-cat mb-30">
                             <div class="s-cat-icon">
                                 <i class="flaticon-cruise"></i>
                             </div>
                             <div class="s-cat-content">
-                                <h5>Door Pickup</h5>
+                                <h5>Manage Pickup</h5>
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <a href="#" class="s-single-cat mb-30">
+                        <a href="{{route('products')}}" class="s-single-cat mb-30">
                             <div class="s-cat-icon">
                                 <i class="flaticon-cruise"></i>
                             </div>
                             <div class="s-cat-content">
-                                <h5>Box shipping</h5>
+                                <h5>shipping</h5>
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <a href="#" class="s-single-cat mb-30">
+                        <a href="{{route('products')}}" class="s-single-cat mb-30">
                             <div class="s-cat-icon">
                                 <i class="flaticon-warehouse"></i>
                             </div>
                             <div class="s-cat-content">
-                                <h5>Warehousing</h5>
+                                <h5>Packaging</h5>
                             </div>
                         </a>
                     </div>

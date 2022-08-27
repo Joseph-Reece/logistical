@@ -46,16 +46,16 @@
 .btn-primary {
     color: #fff;
     background-color: #007b5e;
-    border-color: #007b5e;
+    /* border-color: #007b5e; */
 }
 
-section {
+.custom-section {
     padding: 60px 0;
 }
 
 section .section-title {
     text-align: center;
-    color: #007b5e;
+    /* color: #007b5e; */
     margin-bottom: 50px;
     text-transform: uppercase;
 }
@@ -144,16 +144,42 @@ section .section-title {
 
 .backside .card a {
     font-size: 18px;
-    color: #007b5e !important;
+    /* color: #007b5e !important; */
 }
 
 .frontside .card .card-title,
 .backside .card .card-title {
-    color: #007b5e !important;
+    /* color: #007b5e !important; */
 }
 
 .frontside .card .card-body img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
+}
+
+.box {
+    margin-top: 45px;
+    background-color: #ffffff;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 10%);
+}
+
+.box .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 21% 90%, 15% 100%, 9% 90%, 0 90%);
+}
+
+.box .detail-box {
+    padding:20px;
+}
+
+.box .detail-box >h5 {
+    text-transform: uppercase;
+}
+
+.quote-btn {
+    border-radius: 10px;
+    padding: 15px 20px;
 }

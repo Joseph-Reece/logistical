@@ -285,4 +285,28 @@ class PagesController extends Controller
 
         return view('pages.why-we-exist', compact('core_values', 'principles'));
     }
+
+    public function products ()
+    {
+        $products = [
+            [
+                "name" => "Pick Ups",
+                "description" => "We offer scheduling and management of door to door pickups",
+                'image_path' => 'open_box.png'
+            ],
+            [
+                "name" => "packaging",
+                "description" => "We assist in organizing and packaging of small and large cargo",
+                'image_path' => 'open_box.png'
+            ],
+            [
+                "name" => "shipment",
+                "description" => " We offer shipment services from Europe to East Africa",
+                'image_path' => 'warehouse.jpg'
+            ],
+        ];
+
+        return view('pages.products', compact('products'));
+    }
+    
 }

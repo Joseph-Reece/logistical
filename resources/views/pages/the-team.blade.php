@@ -87,7 +87,7 @@
                                     </div>
                                 </div>
                             </div>
-                            {{-- <div class="backside">
+                            <div class="backside">
                                 <div class="card">
                                     <div class="card-body mt-4 text-center">
                                         <h4 class="card-title">Antony Macharia</h4>
@@ -99,15 +99,7 @@
                                             global
                                             professional body associated with Logistics &amp; Transport and a member of
                                             Kenya Transport
-                                            &amp; Logistics Network. Having led a successful Logistics company in Europe, he
-                                            has severally
-                                            been recognized by the European Government and won several awards.
-                                            He has a wealth of over 20 years’ experience in Transport and Logistics
-                                            Management,
-                                            having worked in the largest Logistics companies in Germany. He is the founding
-                                            member
-                                            of Jambo Logistics and the Company’s Chief Executive Officer and a member of the
-                                            Board.
+                                            &amp; Logistics Network.
                                         </p>
                                         <ul class="list-inline">
                                             <li class="list-inline-item">
@@ -137,7 +129,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </div> --}}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -153,33 +145,21 @@
                                             <img class="img-fluid" src="{{ asset('assets/img/images/antonyNoBg.png') }}"
                                                 class="ceo-img" loading="lazy" alt="img">
                                         </p>
-                                        <h4 class="card-title">Antony Macharia</h4>
-                                        <p class="card-text">CEO</p>
-                                        {{-- <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a> --}}
+                                        <h4 class="card-title">Annfrasia Gichuhi
+                                            </h4>
+                                        <p class="card-text">Managing Director</p>
                                     </div>
                                 </div>
                             </div>
-                            {{-- <div class="backside">
+                            <div class="backside">
                                 <div class="card">
                                     <div class="card-body mt-4 text-center">
                                         <h4 class="card-title">Antony Macharia</h4>
-                                        <p class="card-text">Macharia holds a Bachelor’s degree holder in Logistics and
-                                            Supply Chain Management from
-                                            Jomo Kenyatta University of Agriculture and Technology (JKUAT). He is also a
-                                            trained
-                                            Logistics Manager from the Chattered Institute of Logistics &amp; Transport a
-                                            global
-                                            professional body associated with Logistics &amp; Transport and a member of
-                                            Kenya Transport
-                                            &amp; Logistics Network. Having led a successful Logistics company in Europe, he
-                                            has severally
-                                            been recognized by the European Government and won several awards.
-                                            He has a wealth of over 20 years’ experience in Transport and Logistics
-                                            Management,
-                                            having worked in the largest Logistics companies in Germany. He is the founding
-                                            member
-                                            of Jambo Logistics and the Company’s Chief Executive Officer and a member of the
-                                            Board.
+                                        <p class="card-text">She holds a Bachelor’s degree in Marketing Management and Higher Diploma in Business
+                                            Administration from Technical University of Kenya (TUK).
+                                            She has a wealth of over 10 years’ experience, having worked in the various companies in
+                                            the managerial positions. She is the Company’s Managing Director and a member of the
+                                            <Board class=""></Board>
                                         </p>
                                         <ul class="list-inline">
                                             <li class="list-inline-item">
@@ -209,7 +189,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </div> --}}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -225,33 +205,18 @@
                                             <img class="img-fluid" src="{{ asset('assets/img/images/antonyNoBg.png') }}"
                                                 class="ceo-img" loading="lazy" alt="img">
                                         </p>
-                                        <h4 class="card-title">Antony Macharia</h4>
-                                        <p class="card-text">CEO</p>
-                                        {{-- <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a> --}}
+                                        <h4 class="card-title">Catherine Muturi</h4>
+                                        <p class="card-text">Warehouse Manager</p>
                                     </div>
                                 </div>
                             </div>
-                            {{-- <div class="backside">
+                            <div class="backside">
                                 <div class="card">
                                     <div class="card-body mt-4 text-center">
                                         <h4 class="card-title">Antony Macharia</h4>
-                                        <p class="card-text">Macharia holds a Bachelor’s degree holder in Logistics and
-                                            Supply Chain Management from
-                                            Jomo Kenyatta University of Agriculture and Technology (JKUAT). He is also a
-                                            trained
-                                            Logistics Manager from the Chattered Institute of Logistics &amp; Transport a
-                                            global
-                                            professional body associated with Logistics &amp; Transport and a member of
-                                            Kenya Transport
-                                            &amp; Logistics Network. Having led a successful Logistics company in Europe, he
-                                            has severally
-                                            been recognized by the European Government and won several awards.
-                                            He has a wealth of over 20 years’ experience in Transport and Logistics
-                                            Management,
-                                            having worked in the largest Logistics companies in Germany. He is the founding
-                                            member
-                                            of Jambo Logistics and the Company’s Chief Executive Officer and a member of the
-                                            Board.
+                                        <p class="card-text">
+                                            She holds a Bachelor's degree in Customer Relationship Management and Higher Diploma in Marketing Management from Chuka University.
+                                            She has over 10 years' experience, having worked in the various companies in managerial positions. She is the Company's Warehouse manager.
                                         </p>
                                         <ul class="list-inline">
                                             <li class="list-inline-item">
@@ -281,7 +246,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </div> --}}
+                            </div>
                         </div>
                     </div>
                 </div>
