@@ -127,7 +127,7 @@
                         </div>
                         <div class="contact-content">
                             <h5>Email</h5>
-                            <span>info@jambologistics.co.ke </span>
+                            <a href="mailto:info@jambologistics.co.ke"><span>info@jambologistics.co.ke </span></a>
                         </div>
                     </div>
                 </div>

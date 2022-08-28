@@ -8,9 +8,12 @@
                         <div class="footer-logo mb-35">
                             <a href="{{ route('home')}}"><img src="{{asset('assets/img/logo/logo2.png')}}" alt="img"></a>
                         </div>
+                        <div class="email pb-3">
+                            <a href="mailto:info@jamologistics.co.ke"><i class="fa fa-envelope"></i> info@jambologistics.co.ke</a>
+                        </div>
                         <div class="footer-social">
                             <ul>
-                                <li><a href="https://facebook.com/jambologistic" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://facebook.com/jambologistics" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
                                 <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
