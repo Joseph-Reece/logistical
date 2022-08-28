@@ -30,7 +30,15 @@ class GetQuotation extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.quotation',['data' => $this->details])->subject('Quotation Request');
+        return $this->markdown('emails.quotation')->subject('Quotation Request')->with([
+            'length' => $this->details['length'],
+            'width' => $this->details['width'],
+            'height' => $this->details['height'],
+            'origin' => $this->details['origin'],
+            'destination' => $this->details['destination'],
+            'contact' => $this->details['contact'],
+            'email' => $this->details['email'],
+        ]);
 
     }
 }

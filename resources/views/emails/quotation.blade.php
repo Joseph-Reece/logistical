@@ -1,14 +1,21 @@
 @component('mail::message')
 # New Quotation Request
 
-The body of your message.
 @component('mail::panel')
-{{$data['contact']}}
-{{$data['email']}}
-@endcomponent
+## Package Details
 
-@component('mail::button', ['url' => '', 'color' => 'success'])
-Button Text
+<p>Length: {{$length}} cm</p>
+<p>Width: {{ $width }} cm</p>
+<p>Height: {{ $height }} cm</p>
+
+@endcomponent
+@component('mail::panel')
+## contact Details
+
+<p>Origin: {{ $origin }}</p>
+<p>Destination: {{ $destination }}</p>
+<p>You can contact me on {{ $contact }} or {{ $email }}</p>
+
 @endcomponent
 
 Thanks,<br>
