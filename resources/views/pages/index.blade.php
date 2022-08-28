@@ -380,7 +380,8 @@
                             <h2>Cargo Request Quote</h2>
                         </div>
                         <div class="cta-from">
-                            <form action="#">
+                            <form action="{{route('sendMail')}}" method="POST" enctype="multipart/form-data">
+                                @csrf
                                 {{-- hidden shipping service --}}
                                 <div class="cta-form-col d-flex justify-content-between">
                                     <input type="text" name="length" placeholder="Length cm">
@@ -388,14 +389,14 @@
                                     <input type="text" name="height" placeholder="Height cm">
                                 </div>
                                 <div class="cta-form-col d-flex justify-content-between">
-                                    <select class="custom-select">
+                                    <select class="custom-select" name="origin">
                                         <option selected="">From Country</option>
                                         @foreach ($euro_countries as $country)
                                             <option value="{{ $country['name'] }}">{{ $country['name'] }}</option>
                                         @endforeach
 
                                     </select>
-                                    <select class="custom-select ">
+                                    <select class="custom-select " name="destination">
                                         <option selected="">To Country</option>
                                         @foreach ($east_africa_countries as $country)
                                             <option value="{{ $country['name'] }}">{{ $country['name'] }}</option>
@@ -405,7 +406,7 @@
                                 <div class="cta-form-col d-flex justify-content-between">
                                     <input type="tel" class="cta-email" name="contact" id="contact"
                                         placeholder="contact">
-                                    <input class="cta-email" type="email" placeholder="Email ID">
+                                    <input class="cta-email" type="email" name="email" placeholder="Email ID">
                                 </div>
                                 {{-- <h4 class="extra-services"><i class="fas fa-binoculars"></i>Extra Service</h4>
                                 <ul>
@@ -416,7 +417,7 @@
                                         </div>
                                     </li>
                                 </ul> --}}
-                                <button class="btn">Get Quote</button>
+                                <button type="submit" class="btn">Get Quote</button>
                             </form>
                         </div>
                     </div>

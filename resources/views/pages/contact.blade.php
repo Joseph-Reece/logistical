@@ -22,7 +22,16 @@
         </div>
     </div>
     <!-- breadcrumb-area-end -->
-
+    @if(Session::has('success'))
+    <div class="d-flex justify-content-center py-1">
+        <div class=" col-md-4 alert alert-success alert-dismissible fade show" role="alert">
+            {{Session::get('success')}}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+        </div>
+    </div>
+@endif
     <!-- support-area -->
     <div class="support-area support-bg pt-110 pb-120">
         <div class="container">
@@ -39,23 +48,24 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="support-form text-center">
-                        <form action="#">
+                        <form action="{{route('sendMessage')}}" method="POST">
+                            @csrf
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="text" placeholder="First Name *">
+                                    <input type="text" name="fname" placeholder="First Name *">
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" placeholder="Last Name *">
+                                    <input type="text" name="lname" placeholder="Last Name *">
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="email" placeholder="Your E-mail *">
+                                    <input type="email" name="email" placeholder="Your E-mail *">
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="tel" placeholder="Phone number">
+                                    <input type="tel" name="phone_number" placeholder="Phone number">
                                 </div>
                             </div>
-                            <textarea name="message" id="message" placeholder="Message"></textarea>
-                            <button class="btn red-btn">Submit Now</button>
+                            <textarea name="message" name="message" id="message" placeholder="Message"></textarea>
+                            <button type="submit" class="btn red-btn">Submit Now</button>
                         </form>
                     </div>
                 </div>
@@ -126,7 +136,4 @@
     </section>
     <!-- contact-area-end -->
 
-    <!-- contact-map -->
-    <div id="contact-page-map"></div>
-    <!-- contact-map-end -->
 @endsection

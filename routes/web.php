@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\QuotationsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,6 +33,7 @@ Route::get('/the-team', function () {
      return view('pages.the-team');
 })->name('the-team');
 
-Route::get('/contact-us', function () {
-     return view('pages.contact');
-})->name('contact');
+Route::get('/contact-us', [ContactsController::class, 'index'])->name('contact');
+Route::post('/sendMessage', [ContactsController::class, 'sendMessage'])->name('sendMessage');
+
+Route::post('/sendmail', [QuotationsController::class, 'index'])->name('sendMail');
