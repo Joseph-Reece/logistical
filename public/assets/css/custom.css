@@ -1,7 +1,7 @@
-.principle-title > h4{
+.principle-title > h4 {
     color: white !important;
 }
-.logo>a>span {
+.logo > a > span {
     color: orange;
 }
 
@@ -9,7 +9,7 @@
     border: 0;
 }
 
-.value-card .card-body>h6 {
+.value-card .card-body > h6 {
     color: grey;
 }
 
@@ -23,14 +23,13 @@
     left: 0;
 }
 
-
 /* ================================================ */
 /* ================================================ */
 /* ================================================ */
 /* ================================================ */
 /* FontAwesome for working BootSnippet :> */
 
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 #team {
     background: #eee !important;
 }
@@ -72,7 +71,7 @@ section .section-title {
     -o-transform: rotateY(0deg);
     -ms-transform: rotateY(0deg);
     transform: rotateY(0deg);
-    border-radius: .25rem;
+    border-radius: 0.25rem;
 }
 
 .image-flip:hover .frontside,
@@ -168,18 +167,77 @@ section .section-title {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 21% 90%, 15% 100%, 9% 90%, 0 90%);
+    clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% 90%,
+        21% 90%,
+        15% 100%,
+        9% 90%,
+        0 90%
+    );
 }
 
 .box .detail-box {
-    padding:20px;
+    padding: 20px;
 }
 
-.box .detail-box >h5 {
+.box .detail-box > h5 {
     text-transform: uppercase;
 }
 
 .quote-btn {
     border-radius: 10px;
     padding: 15px 20px;
+}
+
+/* ============================================================================================================ */
+/* =============================================404 page======================================================= */
+/* ============================================================================================================ */
+@keyframes color {
+    0% {
+        background: #33cccc;
+    }
+    20% {
+        background: #33cc36;
+    }
+    40% {
+        background: #b8cc33;
+    }
+    60% {
+        background: #fcca00;
+    }
+    80% {
+        background: #33cc36;
+    }
+    100% {
+        background: #33cccc;
+    }
+}
+/*
+body {
+    background: #33cccc;
+    animation: color 9s infinite linear;
+    text-align: center;
+    padding: 2em;
+}
+h1 {
+    text-align: center;
+    font-family: "Kavoon", sans-serif;
+    font-size: 2.5em;
+    color: white;
+}
+     */
+
+section.not-found{
+    background-image: url(../img/errors/17.svg);
+    font-family: 'Raleway', 'sans serif';
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding-top: 200px; */
+    padding-bottom: 200px;
+}
+section.not-found h1 {
+    font-size: 3em !important;
 }
