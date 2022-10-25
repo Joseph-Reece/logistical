@@ -84,7 +84,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-7">
                     <div class="copyright-text">
-                        <p>Copyright &copy <a href="mailto:reecesoftwares@gmail.com"><span>Reece Softwares </span></a> | All Rights Reserved</p>
+                        <p>Copyright &copy Jambo Logistics | All Rights Reserved | Developed By <a href="mailto:reecesoftwares@gmail.com"><span>Reece Softwares </span></a> </p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-5">

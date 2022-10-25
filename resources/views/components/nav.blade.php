@@ -34,7 +34,7 @@
                                             href="{{ route('the-team') }}"> The Team</a>
                                     </li>
                                     <li class="{{ request()->is('products') ? 'active' : '' }}"><a
-                                            href="{{ route('products') }}"> products</a>
+                                            href="{{ route('products') }}"> Products</a>
                                     </li>
                                     <li class="{{ request()->is('contact-us') ? 'active' : '' }}"><a
                                             href="{{ route('contact') }}">Contact Us</a>

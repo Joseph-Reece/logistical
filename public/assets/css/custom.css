@@ -214,30 +214,3 @@ section .section-title {
         background: #33cccc;
     }
 }
-/*
-body {
-    background: #33cccc;
-    animation: color 9s infinite linear;
-    text-align: center;
-    padding: 2em;
-}
-h1 {
-    text-align: center;
-    font-family: "Kavoon", sans-serif;
-    font-size: 2.5em;
-    color: white;
-}
-     */
-
-section.not-found{
-    background-image: url(../img/errors/17.svg);
-    font-family: 'Raleway', 'sans serif';
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* padding-top: 200px; */
-    padding-bottom: 200px;
-}
-section.not-found h1 {
-    font-size: 3em !important;
-}

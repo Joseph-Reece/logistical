@@ -155,7 +155,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="s-section-title mb-30">
-                            <h2>International Cargo</h2>
+                            <h2>Courier Services</h2>
                             <h6>Ship, Deliver, easy for you</h6>
                         </div>
                         <div class="int-services-content">
@@ -231,7 +231,7 @@
                                 <img src="{{ asset('assets/img/icon/ds_icon01.png') }}" alt="icon">
                             </div>
                             <div class="ds-content text-sm-left text-md-right text-center">
-                                <h5>Cargo Delivery</h5>
+                                <h5>Courier Services </h5>
                                 {{--  <p>Text Here Text Here</p>  --}}
                             </div>
                         </div>
@@ -258,7 +258,7 @@
                                 <img src="{{ asset('assets/img/icon/ds_icon04.png') }}" alt="icon">
                             </div>
                             <div class="ds-content">
-                                <h5>International delivery</h5>
+                                <h5>Door-Door Pick-up services</h5>
                                 {{--  <p>Text Here Text Here</p>  --}}
                             </div>
                         </div>
@@ -324,7 +324,7 @@
                             <i class="flaticon-like"></i>
                         </div>
                         <div class="fact-content">
-                            <h4><span class="count">5</span> Yrs</h4>
+                            <h4>+<span class="count">10</span> Yrs</h4>
                             <h6>Year Experience</h6>
                             {{--  <p>Fill Text Here</p>  --}}
                         </div>

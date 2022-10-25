@@ -1121,7 +1121,8 @@ label {
 
 /* 5. Breadcrumb  */
 .breadcrumb-bg {
-	background-image: url(../img/bg/aboutBanner.jpg);
+	/* background-image: url(../img/bg/aboutBanner.jpg); */
+	background-image: url(../img/brand/Container.jpeg);
 	min-height: 300px;
 	background-position: center;
 	background-size: cover;
