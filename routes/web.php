@@ -28,6 +28,7 @@ Route::get('/about', function () {
 
 Route::get('/why-we-exist', [PagesController::class, 'whyExist'])->name('why_we_exist');
 Route::get('/products', [PagesController::class, 'products'])->name('products');
+Route::get('/packaging', [PagesController::class, 'packaging'])->name('packaging');
 
 Route::get('/the-team', function () {
      return view('pages.the-team');

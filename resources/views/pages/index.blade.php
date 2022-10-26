@@ -44,7 +44,7 @@
             <div class="s-category-wrap">
                 <div class="row d-flex justify-content-center">
                     <div class="col-lg-3 col-sm-6">
-                        <a href="{{route('products')}}" class="s-single-cat mb-30">
+                        <a href="{{ route('products') }}" class="s-single-cat mb-30">
                             <div class="s-cat-icon">
                                 <i class="flaticon-cruise"></i>
                             </div>
@@ -54,7 +54,7 @@
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <a href="{{route('products')}}" class="s-single-cat mb-30">
+                        <a href="{{ route('products') }}" class="s-single-cat mb-30">
                             <div class="s-cat-icon">
                                 <i class="flaticon-cruise"></i>
                             </div>
@@ -64,7 +64,7 @@
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <a href="{{route('products')}}" class="s-single-cat mb-30">
+                        <a href="{{ route('packaging') }}" class="s-single-cat mb-30">
                             <div class="s-cat-icon">
                                 <i class="flaticon-warehouse"></i>
                             </div>
@@ -147,35 +147,27 @@
     <section class="international-services position-relative pt-120 pb-100 fix">
         <div class="container">
             <div class="services-wrapper">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 order-0 order-lg-2">
-                        <div class="int-services-img text-lg-right text-center">
-                            <img src="{{ asset('assets/img/images/transports.png') }}" alt="img">
+                <h2 class="text-center">Services We Offer</h2>
+
+                <div class="row">
+                    @foreach ($products as $product)
+                        <div class="col-md-6 col-lg-4 mx-auto">
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="{{ asset('assets/img/images/' . $product['image_path']) }}" alt="">
+                                </div>
+                                <div class="detail-box">
+                                    <h5>
+                                        {{ $product['name'] }}
+                                    </h5>
+                                    <p>
+                                        {{ $product['description'] }}
+                                    </p>
+                                    <a href="{{ $product['name'] }}" class="btn btn-primary">Learn More</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="s-section-title mb-30">
-                            <h2>Courier Services</h2>
-                            <h6>Ship, Deliver, easy for you</h6>
-                        </div>
-                        <div class="int-services-content">
-                            <p>Jambo logistics pick-up service is effective logistics solution for delivery of small
-                                cargo.</p>
-                            <ul>
-                                <li>
-                                    <i class="flaticon-shipping"></i>
-                                    <h5>60+ Countries</h5>
-                                    <p>With users who trust us</p>
-                                </li>
-                                <li>
-                                    <i class="flaticon-warehouse"></i>
-                                    <h5>Warehousing</h5>
-                                    <p>Cargo in-transit between our warehouses. Less cost for you</p>
-                                </li>
-                            </ul>
-                            <a href="#" class="btn">Get Quote</a>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -187,25 +179,25 @@
 
     <!-- video-area -->
     <!-- <section class="video-area video-bg">
-                    <div class="container">
-                        <div class="video-overlay">
-                            <div class="row align-items-center">
-                                <div class="col-xl-5 col-lg-8 order-lg-0 order-2">
-                                    <div class="video-title">
-                                        <span>Our Chalanges</span>
-                                        <h2><span>never</span> break our promise</h2>
-                                        <a href="#">more services<span></span></a>
+                        <div class="container">
+                            <div class="video-overlay">
+                                <div class="row align-items-center">
+                                    <div class="col-xl-5 col-lg-8 order-lg-0 order-2">
+                                        <div class="video-title">
+                                            <span>Our Chalanges</span>
+                                            <h2><span>never</span> break our promise</h2>
+                                            <a href="#">more services<span></span></a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="video-play">
-                                        <a href="https://www.youtube.com/watch?v=iWKu6WNFf9M" class="popup-video"><img src="{{ asset('assets/img/icon/play_btn.png') }}" alt="img"></a>
+                                    <div class="col-lg-3">
+                                        <div class="video-play">
+                                            <a href="https://www.youtube.com/watch?v=iWKu6WNFf9M" class="popup-video"><img src="{{ asset('assets/img/icon/play_btn.png') }}" alt="img"></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section> -->
+                    </section> -->
     <!-- video-area-end -->
 
     <!-- delivery-services -->
@@ -277,6 +269,329 @@
         </div>
     </section>
     <!-- delivery-services-end -->
+    <!-- faq-area -->
+    <section class="faq-area faq-bg pt-110 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-10">
+                    <div class="s-section-title mb-60 text-center">
+                        <h2>Packaging options we provide</h2>
+                        <p>We Offer a wide range of packaging solutions to our clients</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-wrapper">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="nav flex-column nav-pills faq-tab-pills" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                                role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                <div class="faq-tab-icon">
+                                    {{-- <i class="far fa-bell"></i> --}}
+                                    <i class="fas fa-suitcase-rolling"></i>
+                                </div>
+                                <div class="faq-tab-content d-none d-lg-block">
+                                    <h5>Suitcase</h5>
+                                    <p>Shipping accross countries</p>
+                                </div>
+                            </a>
+                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                                role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                <div class="faq-tab-icon">
+                                    <i class="fas fa-prescription-bottle"></i>
+                                </div>
+                                <div class="faq-tab-content d-none d-lg-block">
+                                    <h5>Barells</h5>
+                                    <p>Types of cargo and packaging</p>
+                                </div>
+                            </a>
+                            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+                                role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                <div class="faq-tab-icon">
+                                    <i class="fas fa-pallet"></i>
+                                </div>
+                                <div class="faq-tab-content d-none d-lg-block">
+                                    <h5>Pallete</h5>
+                                    <p>Cargo transportation services</p>
+                                </div>
+                            </a>
+                            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings"
+                                role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                <div class="faq-tab-icon">
+                                    <i class="fas fa-box"></i>
+                                </div>
+                                <div class="faq-tab-content d-none d-lg-block">
+                                    <h5>Umzuq box</h5>
+                                    <p>Boxing packages</p>
+                                </div>
+                            </a>
+                            <a class="nav-link" id="v-pills-cargo-tab" data-toggle="pill" href="#v-pills-cargo"
+                                role="tab" aria-controls="v-pills-cargo" aria-selected="false">
+                                <div class="faq-tab-icon">
+                                    <i class="fas fa-boxes"></i>
+                                </div>
+                                <div class="faq-tab-content d-none d-lg-block">
+                                    <h5>Cargo box</h5>
+                                    <p>Boxing packages</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-7">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                aria-labelledby="v-pills-home-tab">
+                                <div class="faq-accordion">
+                                    <div class="faq-tab-icon">
+                                        <i class="fas fa-suitcase-rolling"></i>
+                                    </div>
+                                    <div class="faq-accordion-content fix">
+                                        <div class="faq-tab-content mb-30">
+                                            <h5>Suitcase</h5>
+                                            <p>Shipping internationally</p>
+                                        </div>
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="card">
+                                                <div class="card-header" id="headingOne">
+                                                    <div class="img-box">
+                                                        <img src="{{ asset('assets/img/gallery/Suitcases.png') }}"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="headingTwo">
+                                                    <h5 class="mb-0">
+                                                        <a href="#" class="btn-link" data-toggle="collapse"
+                                                            data-target="#collapseTwo" aria-expanded="false"
+                                                            aria-controls="collapseTwo">
+                                                            What Type of Cargo
+                                                        </a>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                                                    data-parent="#accordionExample">
+                                                    <div class="card-body">
+                                                        <p>
+                                                            <i class="fas fa-suitcase-rolling"></i>
+                                                            Clothes
+                                                        </p>
+                                                        <p>
+                                                            <i class="fas fa-suitcase-rolling"></i>
+                                                            Kitchenware
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                aria-labelledby="v-pills-profile-tab">
+                                <div class="faq-accordion">
+                                    <div class="faq-tab-icon">
+                                        <i class="fas fa-prescription-bottle"></i>
+                                    </div>
+                                    <div class="faq-accordion-content fix">
+                                        <div class="faq-tab-content mb-30">
+                                            <h5>Barells</h5>
+                                            <p>Barells Option</p>
+                                        </div>
+                                        <div class="accordion" id="accordionAwardExample">
+                                            <div class="card">
+                                                <div class="card-header" id="headingAwardOne">
+                                                    <div class="img-box">
+                                                        <img src="{{ asset('assets/img/gallery/barrell.png') }}"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="headingAwardTwo">
+                                                    <h5 class="mb-0">
+                                                        <a href="#" class="btn-link" data-toggle="collapse"
+                                                            data-target="#collapseAwardTwo" aria-expanded="false"
+                                                            aria-controls="collapseAwardTwo">
+                                                            What type of cargo go in Barrells?
+                                                        </a>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseAwardTwo" class="collapse show"
+                                                    aria-labelledby="headingAwardTwo"
+                                                    data-parent="#accordionAwardExample">
+                                                    <div class="card-body">
+                                                        <p>
+                                                            <i class="fas fa-prescription-bottle"></i> Fragile goods such as Glassware
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                aria-labelledby="v-pills-messages-tab">
+                                <div class="faq-accordion">
+                                    <div class="faq-tab-icon">
+                                        <i class="fas fa-pallet"></i>
+                                    </div>
+                                    <div class="faq-accordion-content fix">
+                                        <div class="faq-tab-content mb-30">
+                                            <h5>Pallet Option</h5>
+                                            <p>Pallet for Boxes</p>
+                                        </div>
+                                        <div class="accordion" id="accordionBullseyeExample">
+                                            <div class="card">
+                                                <div class="card-header" id="headingBullseyeOne">
+                                                    <div class="img-box">
+                                                        <img src="{{ asset('assets/img/gallery/pallete.png') }}"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="headingBullseyeTwo">
+                                                    <h5 class="mb-0">
+                                                        <a href="#" class="btn-link" data-toggle="collapse"
+                                                            data-target="#collapseBullseyeTwo" aria-expanded="false"
+                                                            aria-controls="collapseBullseyeTwo">
+                                                            What type of cargo go in pallets
+                                                        </a>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseBullseyeTwo" class="collapse show"
+                                                    aria-labelledby="headingBullseyeTwo"
+                                                    data-parent="#accordionBullseyeExample">
+                                                    <div class="card-body">
+                                                        <p>
+                                                            <i class="fas fa-pallet"></i> large and Bulky goods such as Doors and Windows.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="headingBullseyeFive">
+                                                    <h5 class="mb-0">
+                                                        <a href="#" class="btn-link collapsed"
+                                                            data-toggle="collapse" data-target="#collapseBullseyeFive"
+                                                            aria-expanded="false" aria-controls="collapseBullseyeFive">
+                                                            More Images
+                                                        </a>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseBullseyeFive" class="collapse"
+                                                    aria-labelledby="headingBullseyeFive"
+                                                    data-parent="#accordionBullseyeExample">
+                                                    <div class="card-body">
+                                                        <div class="img-box">
+                                                            <img src="{{ asset('assets/img/gallery/pallet.png') }}"
+                                                                alt="">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab">
+                                <div class="faq-accordion">
+                                    <div class="faq-tab-icon">
+                                        <i class="fas fa-box"></i>
+                                    </div>
+                                    <div class="faq-accordion-content fix">
+                                        <div class="faq-tab-content mb-30">
+                                            <h5>Umzuq Box</h5>
+                                            <p>Umzuq Boxing cargo</p>
+                                        </div>
+                                        <div class="accordion" id="accordionCogExample">
+                                            <div class="card">
+                                                <div class="card-header" id="headingCogOne">
+                                                    <div class="img-box">
+                                                        <img src="{{ asset('assets/img/gallery/boxing.png') }}"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="headingCogTwo">
+                                                    <h5 class="mb-0">
+                                                        <a href="#" class="btn-link" data-toggle="collapse"
+                                                            data-target="#collapseCogTwo" aria-expanded="false"
+                                                            aria-controls="collapseCogTwo">
+                                                            What Type of Cargo go In Umzuq Boxes?
+                                                        </a>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseCogTwo" class="collapse show"
+                                                    aria-labelledby="headingCogTwo" data-parent="#accordionCogExample">
+                                                    <div class="card-body">
+                                                        <p>
+                                                            <i class="fas fa-box"></i> Light goods such as clothes and kitchenware
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-cargo" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab">
+                                <div class="faq-accordion">
+                                    <div class="faq-tab-icon">
+                                        <i class="fas fa-boxes"></i>
+                                    </div>
+                                    <div class="faq-accordion-content fix">
+                                        <div class="faq-tab-content mb-30">
+                                            <h5>Cargo Boxes</h5>
+                                            <p>Cargo box packaging.</p>
+                                        </div>
+                                        <div class="accordion" id="accordionCogExample">
+                                            <div class="card">
+                                                <div class="card-header" id="headingCogOne">
+
+                                                    <div class="img-box">
+                                                        <img src="{{ asset('assets/img/gallery/cargo_box.png') }}"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="headingCogTwo">
+                                                    <h5 class="mb-0">
+                                                        <a href="#" class="btn-link" data-toggle="collapse"
+                                                            data-target="#collapseCogTwo" aria-expanded="false"
+                                                            aria-controls="collapseCogTwo">
+                                                            Types Of Cargo to go in cargo Boxes?
+                                                        </a>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseCogTwo" class="collapse show"
+                                                    aria-labelledby="headingCogTwo" data-parent="#accordionCogExample">
+                                                    <div class="card-body">
+                                                        <p>
+                                                            <i class="fas fa-box"></i> Light goods such as clothes and kitchenware
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- faq-area-end -->
 
     <!-- fact-area -->
     <section class="fact-area pt-120 pb-65">
@@ -380,7 +695,7 @@
                             <h2>Cargo Request Quote</h2>
                         </div>
                         <div class="cta-from">
-                            <form action="{{route('sendMail')}}" method="POST" enctype="multipart/form-data">
+                            <form action="{{ route('sendMail') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 {{-- hidden shipping service --}}
                                 <div class="cta-form-col d-flex justify-content-between">
@@ -396,7 +711,7 @@
                                         @endforeach
 
                                     </select>
-                                    <select class="custom-select " name="destination">
+                                    <select class="custom-select" name="destination">
                                         <option selected="">To Country</option>
                                         @foreach ($east_africa_countries as $country)
                                             <option value="{{ $country['name'] }}">{{ $country['name'] }}</option>
@@ -503,70 +818,70 @@
 
     <!-- brand-area -->
     <!-- <div class="brand-area gray-bg pt-85 pb-85">
-                    <div class="container">
-                        <div class="row brand-active">
-                            <div class="col-12">
-                                <div class="signle-brand">
-                                    <img src="{{ asset('assets/img/brand/brnad_logo01.png') }}" alt="img">
+                        <div class="container">
+                            <div class="row brand-active">
+                                <div class="col-12">
+                                    <div class="signle-brand">
+                                        <img src="{{ asset('assets/img/brand/brnad_logo01.png') }}" alt="img">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="signle-brand">
-                                    <img src="{{ asset('assets/img/brand/brnad_logo02.png') }}" alt="img">
+                                <div class="col-12">
+                                    <div class="signle-brand">
+                                        <img src="{{ asset('assets/img/brand/brnad_logo02.png') }}" alt="img">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="signle-brand">
-                                    <img src="{{ asset('assets/img/brand/brnad_logo03.png') }}" alt="img">
+                                <div class="col-12">
+                                    <div class="signle-brand">
+                                        <img src="{{ asset('assets/img/brand/brnad_logo03.png') }}" alt="img">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="signle-brand">
-                                    <img src="{{ asset('assets/img/brand/brnad_logo04.png') }}" alt="img">
+                                <div class="col-12">
+                                    <div class="signle-brand">
+                                        <img src="{{ asset('assets/img/brand/brnad_logo04.png') }}" alt="img">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="signle-brand">
-                                    <img src="{{ asset('assets/img/brand/brnad_logo05.png') }}" alt="img">
+                                <div class="col-12">
+                                    <div class="signle-brand">
+                                        <img src="{{ asset('assets/img/brand/brnad_logo05.png') }}" alt="img">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="signle-brand">
-                                    <img src="{{ asset('assets/img/brand/brnad_logo03.png') }}" alt="img">
+                                <div class="col-12">
+                                    <div class="signle-brand">
+                                        <img src="{{ asset('assets/img/brand/brnad_logo03.png') }}" alt="img">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div> -->
+                    </div> -->
     <!-- brand-area-end -->
 
     <!-- newsletter -->
     <!-- <section class="newsletter-area gray-bg">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="newsletter-wrap">
-                                    <div class="row">
-                                        <div class="col-lg-5">
-                                            <div class="newsletter-content">
-                                                <h4>Newsletter Sign Up</h4>
-                                                <span>Notifications our best deals...</span>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="newsletter-wrap">
+                                        <div class="row">
+                                            <div class="col-lg-5">
+                                                <div class="newsletter-content">
+                                                    <h4>Newsletter Sign Up</h4>
+                                                    <span>Notifications our best deals...</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-7">
-                                            <div class="newsletter-form">
-                                                <form action="#">
-                                                    <input type="email" placeholder="Enter your email...">
-                                                    <button class="btn">subscribe</button>
-                                                </form>
+                                            <div class="col-lg-7">
+                                                <div class="newsletter-form">
+                                                    <form action="#">
+                                                        <input type="email" placeholder="Enter your email...">
+                                                        <button class="btn">subscribe</button>
+                                                    </form>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section> -->
+                    </section> -->
     <!-- newsletter-end -->
 @endsection
 @section('script')

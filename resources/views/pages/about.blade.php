@@ -118,8 +118,7 @@
                 <div class="col-xl-7 col-lg-10">
                     <div class="s-section-title mb-60 text-center">
                         <h2>frequently asked questions</h2>
-                        <p>Express delivery is an innovative service is effective logistics solution for the delivery of
-                            small cargo. This service is useful for companies various.</p>
+                        <p>Find Questions our clients frequently ask</p>
                     </div>
                 </div>
             </div>
@@ -131,24 +130,24 @@
                             <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
                                 role="tab" aria-controls="v-pills-home" aria-selected="true">
                                 <div class="faq-tab-icon">
-                                    <i class="far fa-bell"></i>
+                                    <i class="far fa-question-circle"></i>
                                 </div>
                                 <div class="faq-tab-content d-none d-lg-block">
-                                    <h5>Intenational Shipping</h5>
+                                    <h5>International Shipping</h5>
                                     <p>Shipping accross countries</p>
                                 </div>
                             </a>
                             <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
                                 role="tab" aria-controls="v-pills-profile" aria-selected="false">
                                 <div class="faq-tab-icon">
-                                    <i class="fas fa-award"></i>
+                                    <i class="fas fa-ship"></i>
                                 </div>
                                 <div class="faq-tab-content d-none d-lg-block">
-                                    <h5>Cargo Logistics Provider</h5>
-                                    <p>Types of cargo and packaging</p>
+                                    <h5>Shipping</h5>
+                                    <p>Questions asked About Shipping</p>
                                 </div>
                             </a>
-                            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+                            {{-- <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
                                 role="tab" aria-controls="v-pills-messages" aria-selected="false">
                                 <div class="faq-tab-icon">
                                     <i class="fas fa-bullseye"></i>
@@ -167,7 +166,7 @@
                                     <h5>Shipping Lines</h5>
                                     <p>Express delivery is an innovative service effective logistics.</p>
                                 </div>
-                            </a>
+                            </a> --}}
                         </div>
                     </div>
                     <div class="col-xl-8 col-lg-7">
@@ -176,7 +175,7 @@
                                 aria-labelledby="v-pills-home-tab">
                                 <div class="faq-accordion">
                                     <div class="faq-tab-icon">
-                                        <i class="far fa-bell"></i>
+                                        <i class="far fa-question-circle"></i>
                                     </div>
                                     <div class="faq-accordion-content fix">
                                         <div class="faq-tab-content mb-30">
@@ -197,10 +196,7 @@
                                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                                                     data-parent="#accordionExample">
                                                     <div class="card-body">
-                                                        <p>Express delivery is an innovative service is effective logistics
-                                                            solution for the delivery of small cargo. This service is useful
-                                                            companies of various effective service is effective logistics
-                                                            scale.</p>
+                                                        <p>We Ship across Europe and East Africa</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -210,17 +206,14 @@
                                                         <a href="#" class="btn-link" data-toggle="collapse"
                                                             data-target="#collapseTwo" aria-expanded="false"
                                                             aria-controls="collapseTwo">
-                                                            What is cargo and logistics?
+                                                            What is the difference between cargo and logistics?
                                                         </a>
                                                     </h5>
                                                 </div>
                                                 <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
                                                     data-parent="#accordionExample">
                                                     <div class="card-body">
-                                                        <p>Express delivery is an innovative service is effective logistics
-                                                            solution for the delivery of small cargo. This service is useful
-                                                            companies of various effective service is effective logistics
-                                                            scale.</p>
+                                                        <p>Cargo is the term used to describe the goods moved on a conveyance, and logistics is the science and art of organizing that movement. While cargo refers to the goods and materials, logistics is the end-to-end gambit, including customer support. Logistics does not have to involve cargo necessarily, but cargo can’t move without logistics.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -237,30 +230,7 @@
                                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                                     data-parent="#accordionExample">
                                                     <div class="card-body">
-                                                        <p>Express delivery is an innovative service is effective logistics
-                                                            solution for the delivery of small cargo. This service is useful
-                                                            companies of various effective service is effective logistics
-                                                            scale.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header" id="headingFour">
-                                                    <h5 class="mb-0">
-                                                        <a href="#" class="btn-link collapsed"
-                                                            data-toggle="collapse" data-target="#collapseFour"
-                                                            aria-expanded="false" aria-controls="collapseFour">
-                                                            What is between shipment cargo?
-                                                        </a>
-                                                    </h5>
-                                                </div>
-                                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                                                    data-parent="#accordionExample">
-                                                    <div class="card-body">
-                                                        <p>Express delivery is an innovative service is effective logistics
-                                                            solution for the delivery of small cargo. This service is useful
-                                                            companies of various effective service is effective logistics
-                                                            scale.</p>
+                                                        <p>Cargo is the goods carried by larger vehicles, like cargo ships and cargo planes. At the same time, the freight is the goods carried by trucks. Cargo does not refer to money charged for transportation. But it only means the product being transported from one place to another. On the other hand, freight also refers to the goods transported from one place to another. But it can also be called the process of transporting.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -270,37 +240,18 @@
                                                         <a href="#" class="btn-link collapsed"
                                                             data-toggle="collapse" data-target="#collapseFive"
                                                             aria-expanded="false" aria-controls="collapseFive">
-                                                            What are types of cargo?
+                                                            What are types of Shipment?
                                                         </a>
                                                     </h5>
                                                 </div>
                                                 <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                                                     data-parent="#accordionExample">
                                                     <div class="card-body">
-                                                        <p>Express delivery is an innovative service is effective logistics
-                                                            solution for the delivery of small cargo. This service is useful
-                                                            companies of various effective service is effective logistics
-                                                            scale.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header" id="headingSix">
-                                                    <h5 class="mb-0">
-                                                        <a href="#" class="btn-link collapsed"
-                                                            data-toggle="collapse" data-target="#collapseSix"
-                                                            aria-expanded="false" aria-controls="collapseSix">
-                                                            What is the difference between freight cargo?
-                                                        </a>
-                                                    </h5>
-                                                </div>
-                                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
-                                                    data-parent="#accordionExample">
-                                                    <div class="card-body">
-                                                        <p>Express delivery is an innovative service is effective logistics
-                                                            solution for the delivery of small cargo. This service is useful
-                                                            companies of various effective service is effective logistics
-                                                            scale.</p>
+                                                        <p>- Boxes. In terms of Banana Boxes or Umzug carton</p>
+                                                        <p>- Suitcases</p>
+                                                        <p>- Barells. Used for Fragile Items</p>
+                                                        <p>- Pallete. Used For Bulky Goods</p>
+                                                        <a href="{{route('packaging')}}" class="btn btn-primary">Learn more.</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -312,12 +263,12 @@
                                 aria-labelledby="v-pills-profile-tab">
                                 <div class="faq-accordion">
                                     <div class="faq-tab-icon">
-                                        <i class="fas fa-award"></i>
+                                        <i class="fas fa-ship"></i>
                                     </div>
                                     <div class="faq-accordion-content fix">
                                         <div class="faq-tab-content mb-30">
-                                            <h5>Cargo Logistics Provides</h5>
-                                            <p>Express delivery is an innovative service effective logistics.</p>
+                                            <h5>Shipping</h5>
+                                            <p>Jambo Logistics</p>
                                         </div>
                                         <div class="accordion" id="accordionAwardExample">
                                             <div class="card">
@@ -326,7 +277,7 @@
                                                         <a href="#" class="btn-link collapsed"
                                                             data-toggle="collapse" data-target="#collapseAwardOne"
                                                             aria-expanded="true" aria-controls="collapseAwardOne">
-                                                            What is Startesk?
+                                                            Shipment Duration
                                                         </a>
                                                     </h5>
                                                 </div>
@@ -334,11 +285,9 @@
                                                     aria-labelledby="headingAwardOne"
                                                     data-parent="#accordionAwardExample">
                                                     <div class="card-body">
-                                                        <p>Express delivery is an innovative service is effective logistics
-                                                            solution for the delivery of
-                                                            small cargo. This service is useful companies of various
-                                                            effective service is effective
-                                                            logistics scale.</p>
+                                                        <p>
+                                                            From the time the container leaves the shipping line, 4 to 6 weeks
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -348,7 +297,7 @@
                                                         <a href="#" class="btn-link" data-toggle="collapse"
                                                             data-target="#collapseAwardTwo" aria-expanded="false"
                                                             aria-controls="collapseAwardTwo">
-                                                            What is cargo and logistics?
+                                                            Shipment Charges
                                                         </a>
                                                     </h5>
                                                 </div>
@@ -356,11 +305,7 @@
                                                     aria-labelledby="headingAwardTwo"
                                                     data-parent="#accordionAwardExample">
                                                     <div class="card-body">
-                                                        <p>Express delivery is an innovative service is effective logistics
-                                                            solution for the delivery of
-                                                            small cargo. This service is useful companies of various
-                                                            effective service is effective
-                                                            logistics scale.</p>
+                                                        <p>We calculate the cost of our shipments using the package's volume, or L * W * H in cm.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -370,7 +315,7 @@
                                                         <a href="#" class="btn-link collapsed"
                                                             data-toggle="collapse" data-target="#collapseAwardThree"
                                                             aria-expanded="false" aria-controls="collapseAwardThree">
-                                                            What is the difference between freight and cargo?
+                                                            Are there Other Charges
                                                         </a>
                                                     </h5>
                                                 </div>
@@ -378,11 +323,7 @@
                                                     aria-labelledby="headingAwardThree"
                                                     data-parent="#accordionAwardExample">
                                                     <div class="card-body">
-                                                        <p>Express delivery is an innovative service is effective logistics
-                                                            solution for the delivery of
-                                                            small cargo. This service is useful companies of various
-                                                            effective service is effective
-                                                            logistics scale.</p>
+                                                        <p>No more payments from our clients are necessary after the shipping has been paid for.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -392,7 +333,7 @@
                                                         <a href="#" class="btn-link collapsed"
                                                             data-toggle="collapse" data-target="#collapseAwardFour"
                                                             aria-expanded="false" aria-controls="collapseAwardFour">
-                                                            What is between shipment cargo?
+                                                            What are the different types of shipment?
                                                         </a>
                                                     </h5>
                                                 </div>
@@ -400,11 +341,11 @@
                                                     aria-labelledby="headingAwardFour"
                                                     data-parent="#accordionAwardExample">
                                                     <div class="card-body">
-                                                        <p>Express delivery is an innovative service is effective logistics
-                                                            solution for the delivery of
-                                                            small cargo. This service is useful companies of various
-                                                            effective service is effective
-                                                            logistics scale.</p>
+                                                        <p>- Boxes. Light items can be packaged, such as clothing and kitchenware.</p>
+                                                        <p>- Suitcases. Clothing and other non-fragile items can be packaged.</p>
+                                                        <p>- Barells. appropriate for delicate items like glassware</p>
+                                                        <p>- Pallete. suitable for large and bulky products like doors and windows</p>
+                                                        <a href="{{route('packaging')}}" class="btn btn-primary">Learn more.</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -422,33 +363,7 @@
                                                     aria-labelledby="headingAwardFive"
                                                     data-parent="#accordionAwardExample">
                                                     <div class="card-body">
-                                                        <p>Express delivery is an innovative service is effective logistics
-                                                            solution for the delivery of
-                                                            small cargo. This service is useful companies of various
-                                                            effective service is effective
-                                                            logistics scale.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header" id="headingAwardSix">
-                                                    <h5 class="mb-0">
-                                                        <a href="#" class="btn-link collapsed"
-                                                            data-toggle="collapse" data-target="#collapseAwardSix"
-                                                            aria-expanded="false" aria-controls="collapseAwardSix">
-                                                            What is the difference between freight cargo?
-                                                        </a>
-                                                    </h5>
-                                                </div>
-                                                <div id="collapseAwardSix" class="collapse"
-                                                    aria-labelledby="headingAwardSix"
-                                                    data-parent="#accordionAwardExample">
-                                                    <div class="card-body">
-                                                        <p>Express delivery is an innovative service is effective logistics
-                                                            solution for the delivery of
-                                                            small cargo. This service is useful companies of various
-                                                            effective service is effective
-                                                            logistics scale.</p>
+                                                        <p>Sea Cargo</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -456,7 +371,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            {{-- <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
                                 aria-labelledby="v-pills-messages-tab">
                                 <div class="faq-accordion">
                                     <div class="faq-tab-icon">
@@ -745,7 +660,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>

@@ -218,8 +218,26 @@ class PagesController extends Controller
             "code"=> "SS"
           ],
         ];
+
+        $products = [
+            [
+                "name" => "Pick Ups",
+                "description" => "We offer scheduling and management of door to door pickups",
+                'image_path' => 'deliverys.jpg'
+            ],
+            [
+                "name" => "packaging",
+                "description" => "We assist in organizing and packaging of small and large cargo",
+                'image_path' => 'warehouses.jpg'
+            ],
+            [
+                "name" => "shipment",
+                "description" => " We offer shipment services from Europe to East Africa",
+                'image_path' => 'shippings.jpg'
+            ],
+        ];
         // dd($testimonials);
-        return view('pages.index', compact('testimonials', 'euro_countries', 'east_africa_countries'));
+        return view('pages.index', compact('testimonials', 'euro_countries', 'east_africa_countries', 'products'));
     }
 
     public function whyExist()
@@ -292,21 +310,27 @@ class PagesController extends Controller
             [
                 "name" => "Pick Ups",
                 "description" => "We offer scheduling and management of door to door pickups",
-                'image_path' => 'open_box.png'
+                'image_path' => 'deliverys.jpg'
             ],
             [
                 "name" => "packaging",
                 "description" => "We assist in organizing and packaging of small and large cargo",
-                'image_path' => 'open_box.png'
+                'image_path' => 'warehouses.jpg'
             ],
             [
                 "name" => "shipment",
                 "description" => " We offer shipment services from Europe to East Africa",
-                'image_path' => 'warehouse.jpg'
+                'image_path' => 'shippings.jpg'
             ],
         ];
 
         return view('pages.products', compact('products'));
     }
-    
+
+    public function packaging()
+    {
+        return view('pages.packaging');
+
+    }
+
 }
