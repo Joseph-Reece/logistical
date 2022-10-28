@@ -3,25 +3,7 @@
 
 @section('main')
     <!-- breadcrumb-area -->
-    <div class="breadcrumb-area breadcrumb-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="breadcrumb-content">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="dots"></li>
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">About Us</li>
-                                <li class="dots2"></li>
-                            </ol>
-                        </nav>
-                        <h2>About Us</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('components.carousel');
     <!-- breadcrumb-area-end -->
 
 
@@ -127,7 +109,7 @@
                     <div class="col-xl-4 col-lg-5">
                         <div class="nav flex-column nav-pills faq-tab-pills" id="v-pills-tab" role="tablist"
                             aria-orientation="vertical">
-                            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                            <a class="nav-link " id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
                                 role="tab" aria-controls="v-pills-home" aria-selected="true">
                                 <div class="faq-tab-icon">
                                     <i class="far fa-question-circle"></i>
@@ -137,7 +119,7 @@
                                     <p>Shipping accross countries</p>
                                 </div>
                             </a>
-                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                            <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
                                 role="tab" aria-controls="v-pills-profile" aria-selected="false">
                                 <div class="faq-tab-icon">
                                     <i class="fas fa-ship"></i>
@@ -171,7 +153,7 @@
                     </div>
                     <div class="col-xl-8 col-lg-7">
                         <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            <div class="tab-pane fade" id="v-pills-home" role="tabpanel"
                                 aria-labelledby="v-pills-home-tab">
                                 <div class="faq-accordion">
                                     <div class="faq-tab-icon">
@@ -200,7 +182,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="card">
+                                            {{-- <div class="card">
                                                 <div class="card-header" id="headingTwo">
                                                     <h5 class="mb-0">
                                                         <a href="#" class="btn-link" data-toggle="collapse"
@@ -216,8 +198,8 @@
                                                         <p>Cargo is the term used to describe the goods moved on a conveyance, and logistics is the science and art of organizing that movement. While cargo refers to the goods and materials, logistics is the end-to-end gambit, including customer support. Logistics does not have to involve cargo necessarily, but cargo can’t move without logistics.</p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card">
+                                            </div> --}}
+                                            {{-- <div class="card">
                                                 <div class="card-header" id="headingThree">
                                                     <h5 class="mb-0">
                                                         <a href="#" class="btn-link collapsed"
@@ -233,7 +215,7 @@
                                                         <p>Cargo is the goods carried by larger vehicles, like cargo ships and cargo planes. At the same time, the freight is the goods carried by trucks. Cargo does not refer to money charged for transportation. But it only means the product being transported from one place to another. On the other hand, freight also refers to the goods transported from one place to another. But it can also be called the process of transporting.</p>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> --}}
                                             <div class="card">
                                                 <div class="card-header" id="headingFive">
                                                     <h5 class="mb-0">
@@ -259,7 +241,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel"
                                 aria-labelledby="v-pills-profile-tab">
                                 <div class="faq-accordion">
                                     <div class="faq-tab-icon">

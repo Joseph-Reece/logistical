@@ -1,27 +1,10 @@
 @extends('components.layouts.app')
 
 @section('main')
-    <!-- breadcrumb-area -->
-    <div class="breadcrumb-area breadcrumb-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="breadcrumb-content">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="dots"></li>
-                                <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">The Team</li>
-                                <li class="dots2"></li>
-                            </ol>
-                        </nav>
-                        <h2>Meet The Team</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- breadcrumb-area-end -->
+<!-- breadcrumb-area -->
+@include('components.carousel');
+<!-- breadcrumb-area-end -->
+
     <section class="pt-30 text-center">
         <div class="s-section-title mb-30">
             <h2>A Note from the CEO</h2>
