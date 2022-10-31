@@ -86,7 +86,8 @@
                         <div class="contact-content">
                             <h5>Find Location</h5>
                             <span>Jambo Logistics</span>
-                            <span>Githurai, Mwihoko</span>
+
+                            <span>Ripshorster str 366 A, 45357 Essen</span>
                         </div>
                     </div>
                 </div>
@@ -98,8 +99,7 @@
                         <div class="contact-content">
                             <h5>Find Location</h5>
                             <span>Jambo Logistics</span>
-
-                            <span>Ripshorster str 366 A, 45357 Essen</span>
+                            <span>Githurai, Mwihoko</span>
                         </div>
                     </div>
                 </div>
@@ -110,8 +110,8 @@
                         </div>
                         <div class="contact-content">
                             <h5>Phone Number</h5>
-                            <a href="tel:+01 123-456-7890 ">
-                                <span>+01 123-456-7890</span>
+                            <a href="tel:+491 5224 127 081 ">
+                                <span>+491 5224 127 081</span>
                             </a>
                             <a href="tel:+254 799 984 971 ">
 

@@ -125,7 +125,7 @@
                                 <div class="card">
                                     <div class="card-body text-center">
                                         <p>
-                                            <img class="img-fluid" src="{{ asset('assets/img/images/antonyNoBg.png') }}"
+                                            <img class="img-fluid" src="{{ asset('assets/img/images/ann.png') }}"
                                                 class="ceo-img" loading="lazy" alt="img">
                                         </p>
                                         <h4 class="card-title">Annfrasia Gichuhi
